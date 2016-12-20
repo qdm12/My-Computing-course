@@ -1,4 +1,6 @@
-# 04. Github :octocat:
+# 04. Github
+
+:octocat:
 
 ## What is it used for?
 - Code history
@@ -51,7 +53,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
 
 ## Modify directly on Github
 - On your christmas-project Github page, click on **readme.md**
-- Click on the pencil :pencil: on the top right corner to edit the file
+- Click on the pencil :pencil2: on the top right corner to edit the file
 - Change something and click on **Commit changes**
 
 ## Update your local repository

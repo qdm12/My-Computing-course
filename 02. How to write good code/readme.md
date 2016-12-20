@@ -1,4 +1,4 @@
-# 02. How to write good code :computer:
+# 02. How to write good code
 
 ## Code editor
 - [Atom](atom.io)
@@ -23,7 +23,7 @@
   - Comment your code
   - Check the input which can be trash
 - Think as your code as re-usable :recycle:
-- Good example :simple_smile: :
+- Good example :wink: :
 ```python
 def find_average(numbers_list):
   # Sums all the numbers
@@ -49,7 +49,7 @@ def getavg(numbers):
       sum = sum + x
   return float(sum) / numbers.length
 ```
-- Best super complete example :wink: :
+- Best super complete example :relieved: :
 ```python
 def find_average(numbers_list):
   """ Returns the average of a list of numbers
@@ -93,4 +93,4 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to Vagrant up :crystal_ball:
+Before going any further, time to [Vagrant up](github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant)

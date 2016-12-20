@@ -1,4 +1,4 @@
-# 03. Vagrant :crystal_ball:
+# 03. Vagrant
 
 ## Abreviations
 - OS: Operating system
@@ -33,7 +33,7 @@ end
 - And/Or enter `vagrant destroy` to delete it completely.
 
 ## Probems before Vagrant
-- It only works on my machine :recycle:
+- It only works on my machine :poop:
 - OS compatibility issues, "Portability" :-1:
 - Your program and environment should be like :sheep:, not like your :poodle:
 
