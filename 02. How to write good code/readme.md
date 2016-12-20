@@ -21,45 +21,71 @@
   - Choose names wisely (for *variables*, *functions*, etc.)
   - Comment your code
   - Check the input which can be trash
-  - Example (way too complete):
-  ```python
-  def find_average(numbers_list):
-      """ Returns the average of a list of numbers
+- Good example:
+```python
+def find_average(numbers_list):
+  # Sums all the numbers
+  sum = 0
+  for number in numbers_list:
+      sum = sum + number # can also be sum += number
+  print sum # to check the code is working ;)
+  
+  # Divides the sum by the number of numbers
+  average = float(sum) / numbers_list.length
+  # WE USE float() otherwise the division does not result 
+  # in a floating number
+  
+  # When the function is called, it "returns" the average
+  # Example: x = find_average([2,4,7])
+  return average
+```
+- Bad example:
+```python
+def getavg(numbers):
+  s = 0
+  for x in numbers:
+      sum = sum + x
+  return float(sum) / numbers.length
+```
+- Best super complete example:
+```python
+def find_average(numbers_list):
+  """ Returns the average of a list of numbers
+  
+      Sums all the numbers of the list and then divides 
+      the sum by the length of the list to obtain the average.
       
-          Sums all the numbers of the list and then divides 
-          the sum by the length of the list to obtain the average.
-          
-        Args:
-            numbers_list (list): A list of numbers.
+    Args:
+        numbers_list (list): A list of numbers.
 
-        Returns:
-            average (int): The resulting average of the list of numbers
-      """
-      # Checks the input is a list
-      if type(numbers_list) is not list:
-          raise Exception("numbers_list has to be a list")
-      
-      # Checks the first element of the list is an integer or floating 
-      # point number
-      first_number = numbers_list[0]
-      if type(first_number) is not int and type(first_number) is not float:
-          raise Exception("numbers_list has to contain numbers (integer or floating point)")
-      
-      # Sums all the numbers
-      sum = 0
-      for number in numbers_list:
-          sum = sum + number # can also be sum += number
-      print sum # to check the code is working ;)
-      
-      # Divides the sum by the number of numbers
-      average = float(sum) / numbers_list.length
-      # WE USE float() otherwise the division does not result 
-      # in a floating number
-      
-      # When the function is called, it "returns" the average
-      # Example: x = find_average([2,4,7])
-      return average
-  ```
+    Returns:
+        average (int): The resulting average of the list of numbers
+  """
+  # Checks the input is a list
+  if type(numbers_list) is not list:
+      raise Exception("numbers_list has to be a list")
+  
+  # Checks the first element of the list is an integer or floating 
+  # point number
+  first_number = numbers_list[0]
+  if type(first_number) is not int and type(first_number) is not float:
+      raise Exception("numbers_list has to contain numbers (integer or floating point)")
+  
+  # Sums all the numbers
+  sum = 0
+  for number in numbers_list:
+      sum = sum + number # can also be sum += number
+  print sum # to check the code is working ;)
+  
+  # Divides the sum by the number of numbers
+  average = float(sum) / numbers_list.length
+  # WE USE float() otherwise the division does not result 
+  # in a floating number
+  
+  # When the function is called, it "returns" the average
+  # Example: x = find_average([2,4,7])
+  return average
+```
       
 ## Other tips
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
