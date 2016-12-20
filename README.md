@@ -2,10 +2,10 @@
 This is a course I will give about computing in general for people new to computing
 
 ## Lessons
-- 01. What is a program
-- 02. How to write good code
-- 03. Vagrant
-- 04. Github
+- 01. What is a program :floppy_disk:
+- 02. How to write good code :computer:
+- 03. Vagrant :crystal_ball:
+- 04. Github :octocat:
 - 05. Excel file and data
 - 06. Slack
 - 07. Unit tests

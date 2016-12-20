@@ -1,12 +1,12 @@
-# 01. What is a program
+# 01. What is a program :floppy_disk:
 
 ## First, how are computers so clever?
 - Computers are **stupid**
   - Just do 0 and 1 very quickly and a lot
   - Does not know anything about what we expect it to do
-  - Similar to 6 billion idiots
+  - Similar to 6 billion :chicken:
 - Programs are **clever**
-  - Similar to one clever king managing those 6 billion idiots
+  - Similar to one clever :tiger2: managing those 6 billion :chicken: idiots
   - Together, they can build great thing like pyramids
   - But it's hard to write programs to make use of this superfast stupidness
   

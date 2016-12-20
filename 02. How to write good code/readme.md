@@ -1,4 +1,4 @@
-# 02. How to write good code
+# 02. How to write good code :computer:
 
 ## Code editor
 - [Atom](atom.io)
@@ -10,18 +10,20 @@
   - [Notepad++](notepad-plus-plus.org/download/v7.2.2.html)
 
 ## Test your code ASAP
-- Always **test** your code by running it
+- Always **test** your code by running it :running:
   - Even with some fake data you make up
+  - Find a :bug: (*bug*) early !
 - Use the *Python console* for simple stuff, by entering `python` in a terminal
 - Run directly your code by entering `python mycode.py` in a terminal (or use Liclipse)
 
-## Code style
+## Code style :computer:
 - Your code has to be understandable by **others** (and **you** in the *future*)
 - Write explicit code
   - Choose names wisely (for *variables*, *functions*, etc.)
   - Comment your code
   - Check the input which can be trash
-- Good example:
+- Think as your code as re-usable :recycle:
+- Good example :simple_smile: :
 ```python
 def find_average(numbers_list):
   # Sums all the numbers
@@ -39,7 +41,7 @@ def find_average(numbers_list):
   # Example: x = find_average([2,4,7])
   return average
 ```
-- Bad example:
+- Bad example :japanese_ogre: :
 ```python
 def getavg(numbers):
   s = 0
@@ -47,7 +49,7 @@ def getavg(numbers):
       sum = sum + x
   return float(sum) / numbers.length
 ```
-- Best super complete example:
+- Best super complete example :wink: :
 ```python
 def find_average(numbers_list):
   """ Returns the average of a list of numbers
@@ -91,4 +93,4 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to Vagrant up
+Before going any further, time to Vagrant up :crystal_ball:

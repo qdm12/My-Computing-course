@@ -1,12 +1,12 @@
-# 03. Vagrant
+# 03. Vagrant :crystal_ball:
 
 ## Abreviations
 - OS: Operating system
 - VM: Virtual machine (guest OS running on your host OS)
-- `cd`: Change directory command
+- `cd`: Change directory command :open_file_folder:
 
 ## Install Vagrant
-- If on Windows, download and install [**Git**](git-scm.com/downloads)
+- If on Windows, download and install [**Git**](git-scm.com/downloads) :octocat:
 - Download and install [**Virtual Box**](virtualbox.org/wiki/Downloads)
 - Download and install [**Vagrant**](vagrantup.com/downloads.html)
 
@@ -14,28 +14,28 @@
 - Launch your terminal (*Terminal* or *cmd.exe*)
 - Enter `mkdir NewDirectory && cd NewDirectory`
 - Enter `touch Vagrantfile` to create a new file called *Vagrantfile*
-- Open this *Vagrantfile* with your code editor (*You can try with `atom Vagrantfile`) 
+- Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
 - Copy this into it and save it:
 ```Ruby
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
 end
 ```
-- Back to your terminal, enter `**vagrant up**`
+- Back to your terminal, enter **`vagrant up`** :sparkles:
   - This setup up the VM according to your *Vagrantfile*
   - It will show a lot of BS you don't need to know about
-  - It will take some time to download trusty64 the first time only
+  - It will take some time :hourglass: to download trusty64 the first time only
 - Enter `vagrant ssh` to log in the VM.
   - In the VM, enter `cd /vagrant`
-  - In the VM, enter `ls`: That's the **shared** directory !
+  - In the VM, enter `ls` - That's the **shared** directory
   - In the VM, enter `exit` to go back to your host OS
 - Enter `vagrant halt` to shutdown the VM.
 - And/Or enter `vagrant destroy` to delete it completely.
 
 ## Probems before Vagrant
-- It only works on my machine
-- OS compatibility issues, "Portability"
-- Your program and environment should be like sheeps, not like your dog.
+- It only works on my machine :recycle:
+- OS compatibility issues, "Portability" :-1:
+- Your program and environment should be like :sheep:, not like your :poodle:
 
 ## Advantages
 - Creates an *environment* defined in the **Vagrantfile**
@@ -72,7 +72,7 @@ Vagrant.configure(2) do |config|
   SHELL
 end
 ```
-Explanation:
+Explanations:
 - `vb.memory = "512"` sets the VM to use 512 MB of your RAM
 - `vb.cpus = "1"` sets the VM to use 1 of your CPU cores
 - `vb.name = "Vagrant-virtual-machine"` sets the name of your VM
@@ -84,8 +84,8 @@ Explanation:
 - The rest will be explained later
 
 # Essential to remember
-- **Vagrantfile** to describe VM
-- `vagrant up` to create or start the VM
-- `vagrant halt` to shutdown the VM
-- `vagrant destroy` to destroy the VM
-- In the VM, the directory `/vagrant` is the shared directory
+- **Vagrantfile** to describe VM :memo:
+- **`vagrant up`** to create or start the VM :rocket:
+- **`vagrant halt`** to shutdown the VM :zzz:
+- **`vagrant destroy`** to destroy the VM :boom:
+- In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
