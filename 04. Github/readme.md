@@ -10,8 +10,8 @@
 - See later: Testing, deployment, Slack etc.
 
 ## Github account and Git
-- Create an account on [**Github**](github.com/join)
-- Download and install [**Git**](git-scm.com/downloads)
+- Create an account on [**Github**](github_link)
+- Download and install [**Git**](git_link)
 
 ## Create your *repository* on Github
 - Go to [**github.com/new**](github.com/new)
@@ -48,7 +48,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
 - In your terminal, enter `git add readme.md`
 - Enter `git commit -m "Added the readme file about this project"
 - Enter `git push`
-- Go to [github.com/**denisa**/christmas-project](github.com/denisa/christmas-project)
+- Go to [github.com/**denisa**/christmas-project](https://www.github.com/denisa/christmas-project)
 - There is now one file *readme.md* and as you can see it is displayed nicely :open_mouth:
 
 ## Modify directly on Github
@@ -70,3 +70,4 @@ This is my christmas project to understand the basics of *Git* and *Github*
   
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join
+[git_link]: git-scm.com/downloads
