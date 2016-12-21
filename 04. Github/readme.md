@@ -1,4 +1,4 @@
-# 04. Github
+# 4. Github
 
 [![Github][github_image]][github_link]
 
@@ -10,21 +10,21 @@
 - See later: Testing, deployment, Slack etc.
 
 ## Github account and Git
-- Create an account on [**Github**][github_link]
-- Download and install [**Git**][git_link]
+1. Create an account on [**Github**][github_link]
+2. Download and install [**Git**][git_link] (*already done normally*)
 
 ## Create your *repository* on Github
-- Go to [**github.com/new**](https://www.github.com/new)
-- Enter the repository name "christmas-project" :santa: and **Create repository**
-- If your username is *denisa*, copy your repository link https://github.com/denisa/christmas-project.git
+1. Go to [**github.com/new**](https://www.github.com/new)
+2. Enter the repository name "christmas-project" :santa: and **Create repository**
+3. If your username is *denisa*, copy your repository link https://github.com/denisa/christmas-project.git
 
 ## **Clone** your repository
-- In your terminal, enter `git clone https://github.com/denisa/christmas-project.git`
+4. In your terminal, enter `git clone https://github.com/denisa/christmas-project.git`
 
 ## Modify your **local** repository
-- Enter `cd christmas-project` :open_file_folder:
-- Enter `touch readme.md` and open this new file with your text editor.
-- Copy and paste this into *readme.md*:
+5. Enter `cd christmas-project` :open_file_folder:
+6. Enter `touch readme.md` and open this new file with your text editor.
+7. Copy and paste this into *readme.md*:
 ```
 # christmas-project
 
@@ -45,21 +45,53 @@ This is my christmas project to understand the basics of *Git* and *Github*
 ```
 
 ## Add and upload your changes to Github
-- In your terminal, enter `git add readme.md`
-- Enter `git commit -m "Added the readme file about this project"
-- Enter `git push`
-- Go to [github.com/**denisa**/christmas-project](https://www.github.com/denisa/christmas-project)
-- There is now one file *readme.md* and as you can see it is displayed nicely :open_mouth:
+8. In your terminal, enter `git add readme.md`
+9. Enter `git commit -m "Added the readme file about this project"
+10. Enter `git push`
+11. Go to [github.com/**denisa**/christmas-project](https://www.github.com/denisa/christmas-project). 
+    There is now one file *readme.md* and as you can see it is displayed nicely below :open_mouth:
 
-## Modify directly on Github
-- On your christmas-project Github page, click on **readme.md**
-- Click on the pencil :pencil2: on the top right corner to edit the file
-- Change something and click on **Commit changes**
+## How someone else working on this code could affect you
+### Modify directly on Github (*don't do that except for README.md*)
+1. On your christmas-project Github webpage, click on **readme.md**
+2. Click on the pencil :pencil2: on the top right corner to edit the file
+3. Change something and click on **Commit changes**
 
-## Update your local repository
-- Back on your computer's terminal, your *local* repository is now outdated
-- To update it with your change, enter `git pull`
-- This works the same when someone else works on the code and you want to get his or her changes
+### Update your local repository
+4. Back on your computer's terminal, your *local* repository is now outdated
+5. To update it with your change, enter `git pull`
+6. This works the same when someone else works on the code and you want to get his or her changes
+
+## Time to be useful: adding two real files
+1. Creating the files on your computer
+  1. `cd` to your *christmas-project*
+  2. Enter `touch Vagrantfile` to create the file
+  3. With your code editor, copy the following in the *Vagrantfile*
+  ```ruby
+  Vagrant.configure(2) do |config|
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = "512"
+      vb.cpus = 1
+      vb.name = "Vagrant-virtual-machine"
+    end
+    config.vm.hostname = "denisa"
+    config.vm.box = "ubuntu/trusty64"
+    config.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update
+      sudo apt-get install -y git 
+      sudo apt-get install -y python-pip python-dev
+      sudo apt-get -y autoremove
+      cd /vagrant
+      sudo pip install -r requirements.txt  
+    SHELL
+  end
+  ```
+  4. In the terminal, enter `touch requirements.txt` to create the file
+2. Updating Github with your changes
+  1. Enter `git add Vagrantfile requirements.txt`
+  2. Enter `git commit -m "Added initial Vagrantfile and requirements files"
+  3. Enter `git push`
+  
 
 ## More advanced: Probably see that later on :dizzy_face:
 - Branches

@@ -1,4 +1,4 @@
-# 01. The program :floppy_disk:
+# 1. The program :floppy_disk:
 
 ## First, how are computers so clever?
 - Computers are **stupid**
@@ -12,12 +12,12 @@
 ![Building pyramids][pyramid]
 
 ## What does a program do?
-- Takes **input(s)**
+1. Takes **input(s)**
   - Website form
   - File / Database
   - Network or other programs
-- Does **stuff** on inputs
-- Produces **output**
+2. Does **stuff** on inputs
+3. Produces **output**
   - Website page
   - File / Database change
   - Network or other programs
@@ -43,8 +43,11 @@
   a = 13
   b = a + 5
   ```
-  - Generally, to perform the same action, Python code is half of C++ code which is a hundredth of Assembly.
-  
+  - Generally, to perform the same action, Python code is half the size of 
+    C++ code which is a hundredth the size of Assembly code.
+    
+Now, time to dive into [good coding habits][lesson_02]
   
 [01s]: /internals/gifs/01.gif
 [pyramid]: https://www.dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1
+[lesson_02]: /03.%20Vagrant

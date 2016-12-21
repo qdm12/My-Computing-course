@@ -1,4 +1,4 @@
-# 03. Vagrant
+# 3. Vagrant
 
 [![Vagrant][vagrant_image]][vagrant_link]
 
@@ -8,31 +8,31 @@
 - `cd`: Change directory command :open_file_folder:
 
 ## Install Vagrant
-- If on Windows, download and install [**Git**][git_link] :octocat:
-- Download and install [**Virtual Box**][virtualbox_link]
-- Download and install [**Vagrant**][vagrant_link]
+1. Download and install [**Git**][git_link] :octocat:
+2. Download and install [**Virtual Box**][virtualbox_link]
+3. Download and install [**Vagrant**][vagrant_link]
 
 ## Vagrantfile and simplest Vagrant VM
-- Launch your terminal (*Terminal* or *cmd.exe*)
-- Enter `mkdir NewDirectory && cd NewDirectory`
-- Enter `touch Vagrantfile` to create a new file called *Vagrantfile*
-- Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
-- Copy this into it and save it:
-```Ruby
-Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/trusty64"
-end
-```
-- Back to your terminal, enter **`vagrant up`** :sparkles:
+1. Launch your terminal (*Terminal* or *cmd.exe*)
+2. Enter `mkdir NewDirectory && cd NewDirectory`
+3. Enter `touch Vagrantfile` to create a new file called *Vagrantfile*
+4. Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
+5. Copy this into it and save it:
+  ```Ruby
+  Vagrant.configure(2) do |config|
+    config.vm.box = "ubuntu/trusty64"
+  end
+  ```
+6. Back to your terminal, enter **`vagrant up`** :sparkles:
   - This setup up the VM according to your *Vagrantfile*
   - It will show a lot of BS you don't need to know about
-  - It will take some time :hourglass: to download trusty64 the first time only
-- Enter `vagrant ssh` to log in the VM.
-  - In the VM, enter `cd /vagrant`
-  - In the VM, enter `ls` - That's the **shared** directory
-  - In the VM, enter `exit` to go back to your host OS
-- Enter `vagrant halt` to shutdown the VM.
-- And/Or enter `vagrant destroy` to delete it completely.
+  - It will take some time :hourglass: to download *trusty64* the first time only
+7. Enter `vagrant ssh` to log in the VM.
+8. In the VM (you are here), enter `cd /vagrant`
+9. In the VM, enter `ls` - That's the **shared** directory
+10. In the VM, enter `exit` to go back to your host OS's terminal
+11. Enter `vagrant halt` to shutdown the VM.
+12. And/Or enter `vagrant destroy` to delete it completely.
 
 ## Probems before Vagrant
 - It only works on my machine :poop:
@@ -54,7 +54,7 @@ end
 - Serves as a blueprint of what steps were taken to setup the environment for your program
 - You can easily re-produce the steps to deploy it to the cloud etc.
 
-## More complete Vagrantfile (the one used in this project)
+## More complete Vagrantfile (the initial one used in this project)
 ```Ruby
 Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
@@ -64,11 +64,10 @@ Vagrant.configure(2) do |config|
   end
   config.vm.hostname = "denisa"
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network "forwarded_port", guest: 5000, host: 5000
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y git 
-    sudo apt-get install -y python-pip python-dev build-essential
+    sudo apt-get install -y python-pip python-dev
     sudo apt-get -y autoremove
     cd /vagrant
     sudo pip install -r requirements.txt  
@@ -81,7 +80,6 @@ Explanations:
 - `vb.name = "Vagrant-virtual-machine"` sets the name of your VM
 - `config.vm.hostname = "denisa"` sets the VM's username
 - `config.vm.box = "ubuntu/trusty64"` sets the VM's OS to use which is downloaded only once
-- `config.vm.network "forwarded_port", guest: 5000, host: 5000` networking stuff, will explain later
 - `config.vm.provision "shell", inline: <<-SHELL` tells `vagrant up` to launch the terminal of the new VM
 - `sudo apt-get install git` installs git on the VM for example
 - The rest will be explained later
@@ -92,8 +90,13 @@ Explanations:
 - **`vagrant halt`** to shutdown the VM :zzz:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
+- We will see in [lesson 05][lesson_05]: **`vagrant provision`** (update the running VM)
+
+Time to see how to make use of [git and Github][lesson_04]
 
 [vagrant_image]: /internals/icons/vagrant.png
 [vagrant_link]: https://www.vagrantup.com/downloads.html
 [git_link]: https://www.git-scm.com/downloads
 [virtualbox_link]: https://www.virtualbox.org/wiki/Downloads
+[lesson_04]: /04.%20Github
+[lesson_05]: /05.%20Excel%20file%20and%20data

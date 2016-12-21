@@ -1,4 +1,4 @@
-# 02. Code writing
+# 2. Code writing
 
 ![Code writing example][code_writing]
 
@@ -95,7 +95,7 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to [Vagrant up][vagrant_up_link]
+Before going any further, time to [Vagrant up][lesson_03]
 
 
 [atom_link]: https://www.atom.io
@@ -104,4 +104,4 @@ Before going any further, time to [Vagrant up][vagrant_up_link]
 [liclipse_link]: https://www.liclipse.com/download.html
 [coda_link]: https://www.panic.com/coda/
 [npp_link]: https://www.notepad-plus-plus.org/download/v7.2.2.html
-[vagrant_up_link]: https://github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant
+[lesson_03]: /03.%20Vagrant
