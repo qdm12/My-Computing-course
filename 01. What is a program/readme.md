@@ -9,8 +9,8 @@
   - Similar to one clever :tiger2: managing those 6 billion :chicken: idiots
   - Together, they can build great thing like pyramids
   - But it's hard to write programs to make use of this superfast stupidness
-![Building pyramids](dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1)
-  
+![Building pyramids](https://www.dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1)
+
 ## What does a program do?
 - Takes **input(s)**
   - Website form

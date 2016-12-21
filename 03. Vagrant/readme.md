@@ -94,6 +94,6 @@ Explanations:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
 
 [vagrant_image]: /internals/icons/vagrant.png
-[vagrant_link]: vagrantup.com/downloads.html
-[git_link]: git-scm.com/downloads
-[virtualbox_link]: virtualbox.org/wiki/Downloads
+[vagrant_link]: https://www.vagrantup.com/downloads.html
+[git_link]: https://www.git-scm.com/downloads
+[virtualbox_link]: https://www.virtualbox.org/wiki/Downloads

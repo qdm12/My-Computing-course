@@ -3,13 +3,11 @@
 ![Code writing example](/internals/gifs/code_writing.gif)
 
 ## Code editor
-- [![Atom.io][atom_image]][atom_link]
-- Python
-  - [Liclipse](liclipse.com/download.html)
-- Mac OSX
-  - [Coda 2](panic.com/coda/)
-- Windows
-  - [Notepad++](notepad-plus-plus.org/download/v7.2.2.html)
+- There is atom.io which is great:
+[![Atom.io][atom_image]][atom_link]
+- For Python only, you could use [Liclipse](liclipse.com/download.html)
+- On Mac OSX, you can use [Coda 2](panic.com/coda/)
+- On Windows, you can use [Notepad++](notepad-plus-plus.org/download/v7.2.2.html)
 
 ## Test your code ASAP
 - Always **test** your code by running it :running:
@@ -95,8 +93,9 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to [Vagrant up](github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant)
+Before going any further, time to [Vagrant up](vagrant_up_link)
 
 
-[atom_link]: atom.io
+[atom_link]: https://www.atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"
+[vagrant_up_link]: https://github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant

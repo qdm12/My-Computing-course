@@ -69,4 +69,4 @@ This is my christmas project to understand the basics of *Git* and *Github*
   - To change back to a branch, enter `git checkout myBranch`
   
 [github_image]: /internals/icons/github.png
-[github_link]: github.com/join
+[github_link]: https://www.github.com/join
