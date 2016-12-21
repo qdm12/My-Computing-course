@@ -8,9 +8,9 @@
 - `cd`: Change directory command :open_file_folder:
 
 ## Install Vagrant
-- If on Windows, download and install [**Git**](git_link) :octocat:
-- Download and install [**Virtual Box**](virtualbox_link)
-- Download and install [**Vagrant**](vagrant_link)
+- If on Windows, download and install [**Git**][git_link] :octocat:
+- Download and install [**Virtual Box**][virtualbox_link]
+- Download and install [**Vagrant**][vagrant_link]
 
 ## Vagrantfile and simplest Vagrant VM
 - Launch your terminal (*Terminal* or *cmd.exe*)

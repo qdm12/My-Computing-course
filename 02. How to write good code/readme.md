@@ -1,13 +1,13 @@
 # 02. Code writing
 
-![Code writing example](/internals/gifs/code_writing.gif)
+![Code writing example][code_writing]
 
 ## Code editor
 - There is atom.io which is great:
 [![Atom.io][atom_image]][atom_link]
-- For Python only, you could use [Liclipse](liclipse.com/download.html)
-- On Mac OSX, you can use [Coda 2](panic.com/coda/)
-- On Windows, you can use [Notepad++](notepad-plus-plus.org/download/v7.2.2.html)
+- For Python only, you could use [Liclipse][liclipse_link]
+- On Mac OSX, you can use [Coda 2][coda_link]
+- On Windows, you can use [Notepad++][npp_link]
 
 ## Test your code ASAP
 - Always **test** your code by running it :running:
@@ -98,4 +98,8 @@ Before going any further, time to [Vagrant up](vagrant_up_link)
 
 [atom_link]: https://www.atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"
+[code_writing]: /internals/gifs/code_writing.gif
+[liclipse_link]: https://www.liclipse.com/download.html
+[coda_link]: https://www.panic.com/coda/
+[npp_link]: https://www.notepad-plus-plus.org/download/v7.2.2.html
 [vagrant_up_link]: https://github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant
