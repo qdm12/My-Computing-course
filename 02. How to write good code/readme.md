@@ -98,6 +98,6 @@ def find_average(numbers_list):
 Before going any further, time to [Vagrant up](github.com/qdm12/My-Computing-course/tree/master/03.%20Vagrant)
 
 
-[code_writing]: /internals/gif/code_writing.gif "Code writing example"
+[code_writing]: dropbox.com/s/ixqi5b21u9mktp1/code_writing.gif?dl=1 "Code writing example"
 [atom_link]: atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"

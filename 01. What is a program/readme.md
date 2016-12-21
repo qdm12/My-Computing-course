@@ -45,5 +45,5 @@
   ```
   - Generally, to perform the same action, Python code is half of C++ code which is a hundredth of Assembly.
   
-[01s]: /internals/gif/01.gif "0s and 1s"
-[pyramid]: /internals/gif/pyramids.gif "Pyramid built right"
+[01s]: dropbox.com/s/mkns7fbo21ssfdc/01.gif?dl=1 "0s and 1s"
+[pyramid]: dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1 =200x "Pyramid built right"

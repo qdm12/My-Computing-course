@@ -93,7 +93,7 @@ Explanations:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
 
-[vagrant_image]: /internals/icons/vagrant.png
+[vagrant_image]: /internals/icons/vagrant.png = 300px
 [vagrant_link]: vagrantup.com/downloads.html
 [git_link]: git-scm.com/downloads
 [virtualbox_link]: virtualbox.org/wiki/Downloads
