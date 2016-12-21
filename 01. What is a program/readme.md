@@ -1,14 +1,15 @@
-# 01. What is a program :floppy_disk:
+# 01. The program :floppy_disk:
 
 ## First, how are computers so clever?
 - Computers are **stupid**
-  - Just do 0 and 1 very quickly and a lot
+  - Just do ![0s and 1s](01s) very quickly and a lot
   - Does not know anything about what we expect it to do
-  - Similar to 6 billion :chicken:
+  - Similar to 6 billion :chicken: running around
 - Programs are **clever**
   - Similar to one clever :tiger2: managing those 6 billion :chicken: idiots
   - Together, they can build great thing like pyramids
   - But it's hard to write programs to make use of this superfast stupidness
+![Building pyramids](pyramid)
   
 ## What does a program do?
 - Takes **input(s)**
@@ -22,20 +23,27 @@
   - Network or other programs
 
 ## Programming to stupid *binary*
-- Any code in any programming language is *compiled* into 0 and 1
-- With time, we gained more **abstraction** and it is much simpler to write code (*syntax*)
+- Any code in any programming language is *compiled* into ![0s and 1s](01s)  code
+- With time, we gained more **abstraction** and it is much simpler to write code (easier *syntax*)
 - The following will show you that
   - Back in the old days, we only had *assembly language*
-  XXX
+  ```Assembly
+  MOV R0, Dh
+  MOV R1, 5h
+  ADD R0, R1
+  ```
   - Then we had *C++* (still use it)
   ```c++
   int a, b;
-  a = 5;
-  b = a + 2;
+  a = 13;
+  b = a + 5;
   ```
   - And now we have nice & simple *Python*
   ```python
-  a = 5
-  b = a + 2
+  a = 13
+  b = a + 5
   ```
+  - Generally, to perform the same action, Python code is half of C++ code which is a hundredth of Assembly.
   
+[01s]: internals/gif/01.gif "0s and 1s"
+[pyramid]: internals/gif/pyramids.gif "Pyramid built right"

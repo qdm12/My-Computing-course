@@ -1,6 +1,6 @@
 # 04. Github
 
-:octocat:
+[![Github][github_image]][github_link]
 
 ## What is it used for?
 - Code history
@@ -67,3 +67,6 @@ This is my christmas project to understand the basics of *Git* and *Github*
   - `git push -b new-branch` to push your changes to the branch "new-branch" created
   - You then have to merge it in the **master** branch through Github.
   - To change back to a branch, enter `git checkout myBranch`
+  
+[github_image]: internals/icons/github.png
+[github_link]: github.com/join

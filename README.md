@@ -2,8 +2,8 @@
 This is a course I will give about computing in general for people new to computing
 
 ## Lessons
-- 01. What is a program :floppy_disk:
-- 02. How to write good code :computer:
+- 01. The program :floppy_disk:
+- 02. Code writing :computer:
 - 03. Vagrant :crystal_ball:
 - 04. Github :octocat:
 - 05. Excel file and data

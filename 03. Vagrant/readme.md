@@ -1,14 +1,16 @@
 # 03. Vagrant
 
+[![Vagrant][vagrant_image]][vagrant_link]
+
 ## Abreviations
 - OS: Operating system
 - VM: Virtual machine (guest OS running on your host OS)
 - `cd`: Change directory command :open_file_folder:
 
 ## Install Vagrant
-- If on Windows, download and install [**Git**](git-scm.com/downloads) :octocat:
-- Download and install [**Virtual Box**](virtualbox.org/wiki/Downloads)
-- Download and install [**Vagrant**](vagrantup.com/downloads.html)
+- If on Windows, download and install [**Git**](git_link) :octocat:
+- Download and install [**Virtual Box**](virtualbox_link)
+- Download and install [**Vagrant**](vagrant_link)
 
 ## Vagrantfile and simplest Vagrant VM
 - Launch your terminal (*Terminal* or *cmd.exe*)
@@ -35,6 +37,7 @@ end
 ## Probems before Vagrant
 - It only works on my machine :poop:
 - OS compatibility issues, "Portability" :-1:
+- You don't remember how you made it work on your computer :-1:
 - Your program and environment should be like :sheep:, not like your :poodle:
 
 ## Advantages
@@ -48,7 +51,7 @@ end
   - Your OS is not modified
   - You can just *throw it away* and *re-create it*
 - Anyone can use it without knowing what is actually needed
-- You can remember what steps you took to setup your environment for your program
+- Serves as a blueprint of what steps were taken to setup the environment for your program
 - You can easily re-produce the steps to deploy it to the cloud etc.
 
 ## More complete Vagrantfile (the one used in this project)
@@ -89,3 +92,8 @@ Explanations:
 - **`vagrant halt`** to shutdown the VM :zzz:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
+
+[vagrant_image]: internals/icons/vagrant.png
+[vagrant_link]: vagrantup.com/downloads.html
+[git_link]: git-scm.com/downloads
+[virtualbox_link]: virtualbox.org/wiki/Downloads
