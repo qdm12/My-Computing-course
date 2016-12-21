@@ -4,7 +4,9 @@
 
 ## Code editor
 - There is atom.io which is great:
+
 [![Atom.io][atom_image]][atom_link]
+
 - For Python only, you could use [Liclipse][liclipse_link]
 - On Mac OSX, you can use [Coda 2][coda_link]
 - On Windows, you can use [Notepad++][npp_link]
@@ -93,7 +95,7 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to [Vagrant up](vagrant_up_link)
+Before going any further, time to [Vagrant up][vagrant_up_link]
 
 
 [atom_link]: https://www.atom.io

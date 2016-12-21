@@ -10,11 +10,11 @@
 - See later: Testing, deployment, Slack etc.
 
 ## Github account and Git
-- Create an account on [**Github**](github_link)
-- Download and install [**Git**](git_link)
+- Create an account on [**Github**][github_link]
+- Download and install [**Git**][git_link]
 
 ## Create your *repository* on Github
-- Go to [**github.com/new**](github.com/new)
+- Go to [**github.com/new**](https://www.github.com/new)
 - Enter the repository name "christmas-project" :santa: and **Create repository**
 - If your username is *denisa*, copy your repository link https://github.com/denisa/christmas-project.git
 
@@ -70,4 +70,4 @@ This is my christmas project to understand the basics of *Git* and *Github*
   
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join
-[git_link]: git-scm.com/downloads
+[git_link]: https://www.git-scm.com/downloads

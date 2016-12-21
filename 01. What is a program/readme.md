@@ -23,7 +23,7 @@
   - Network or other programs
 
 ## Programming to stupid *binary*
-- Any code in any programming language is *compiled* into ![0s and 1s](01s)  code
+- Any code in any programming language is *compiled* into ![0s and 1s][01s]  code
 - With time, we gained more **abstraction** and it is much simpler to write code (easier *syntax*)
 - The following will show you that
   - Back in the old days, we only had *assembly language*
