@@ -2,14 +2,14 @@
 
 ## First, how are computers so clever?
 - Computers are **stupid**
-  - Just do ![0s and 1s](/internals/gifs/01.gif) very quickly and a lot
+  - Just do  ![0s and 1s](/internals/gifs/01.gif)  very quickly and a lot
   - Does not know anything about what we expect it to do
   - Similar to 6 billion :chicken: running around
 - Programs are **clever**
   - Similar to one clever :tiger2: managing those 6 billion :chicken: idiots
   - Together, they can build great thing like pyramids
   - But it's hard to write programs to make use of this superfast stupidness
-![Building pyramids](dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1 =200x)
+![Building pyramids](dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1)
   
 ## What does a program do?
 - Takes **input(s)**
@@ -44,5 +44,3 @@
   b = a + 5
   ```
   - Generally, to perform the same action, Python code is half of C++ code which is a hundredth of Assembly.
-  
-[01s]: dropbox.com/s/mkns7fbo21ssfdc/01.gif?dl=1 "0s and 1s"

@@ -68,5 +68,5 @@ This is my christmas project to understand the basics of *Git* and *Github*
   - You then have to merge it in the **master** branch through Github.
   - To change back to a branch, enter `git checkout myBranch`
   
-[github_image]: /internals/icons/github.png =300x
+[github_image]: /internals/icons/github.png
 [github_link]: github.com/join
