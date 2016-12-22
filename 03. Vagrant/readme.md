@@ -7,15 +7,26 @@
 - VM: Virtual machine (guest OS running on your host OS)
 - `cd`: Change directory command :open_file_folder:
 
+## Install ssh (*secure shell*)
+- On *Mac* and *Linux*: it's already here :smile:
+- On *Windows* :scream:
+  1. Download and install [**Git**][git_link] :octocat:
+  2. In the Windows search bar, paste **edit the system environment variables** and open it
+  3. Click on **Environment variables...** (bottom)
+  4. In the *System variables* section, search for the variable **Path** and select it
+  5. Click on **Edit...**
+  6. If on Windows 10, click on **Edit text...**
+  7. Add `;C:\Program Files\Git\usr\bin` to the end of the text and press OK to close all windows. :+1:
+
 ## Install Vagrant
-1. Download and install [**Git**][git_link] :octocat:
-2. Download and install [**Virtual Box**][virtualbox_link]
-3. Download and install [**Vagrant**][vagrant_link]
+1. Download and install [**Virtual Box**][virtualbox_link]
+2. Download and install [**Vagrant**][vagrant_link]
+3. **ONLY** IF YOU ENCOUNTER PROBLEMS LATER, check the [Hardware Virtualization Stuff](#Hardware%20Virtualization%20Stuff)
 
 ## Vagrantfile and simplest Vagrant VM
-1. Launch your terminal (*Terminal* or *cmd.exe*)
-2. Enter `mkdir NewDirectory && cd NewDirectory`
-3. Enter `touch Vagrantfile` to create a new file called *Vagrantfile*
+1. Launch your terminal (*Terminal* or *cmd.exe*) :black_small_square:
+2. Enter `mkdir NewDirectory && cd NewDirectory` :new:
+3. Enter `touch Vagrantfile` to create a new file called *Vagrantfile* :new:
 4. Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
 5. Copy this into it and save it:
   ```Ruby
@@ -93,6 +104,16 @@ Explanations:
 - We will see in [lesson 05][lesson_05]: **`vagrant provision`** (update the running VM)
 
 Time to see how to make use of [git and Github][lesson_04]
+
+### Hardware Virtualization Stuff :rotating_light:
+- Check your *Hardware Virtualization* is ON in your BIOS
+  1. Reboot computer
+  2. Press on DEL (or F2, F10, F12) several times when it starts booting
+  3. Search for the hardware virtualization option in the BIOS and turn it on
+- If you don't have VT-x / VMX/ AMD-x available do the following
+  1. Replace *trusty64* by *trusty32* in the Vagrantfile
+  2. Set `vb.cpus = 1` in the Vagrantfile
+
 
 [vagrant_image]: /internals/icons/vagrant.png
 [vagrant_link]: https://www.vagrantup.com/downloads.html

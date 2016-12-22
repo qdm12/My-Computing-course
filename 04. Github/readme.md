@@ -23,7 +23,7 @@
 
 ## Modify your **local** repository
 5. Enter `cd christmas-project` :open_file_folder:
-6. Enter `touch readme.md` and open this new file with your text editor.
+6. Enter `touch readme.md` and open this new file with your text editor :new:
 7. Copy and paste this into *readme.md*:
 ```
 # christmas-project
@@ -65,7 +65,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
 ## Time to be useful: adding two real files
 1. Creating the files on your computer
   1. `cd` to your *christmas-project*
-  2. Enter `touch Vagrantfile` to create the file
+  2. Enter `touch Vagrantfile` to create the file *Vagrantfile* :new:
   3. With your code editor, copy the following in the *Vagrantfile*
   ```ruby
   Vagrant.configure(2) do |config|
@@ -86,7 +86,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
     SHELL
   end
   ```
-  4. In the terminal, enter `touch requirements.txt` to create the file
+  4. In the terminal, enter `touch requirements.txt` to create the file *requirements.txt* :new:
 2. Updating Github with your changes
   1. Enter `git add Vagrantfile requirements.txt`
   2. Enter `git commit -m "Added initial Vagrantfile and requirements files"
