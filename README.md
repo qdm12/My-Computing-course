@@ -2,6 +2,7 @@
 This is a course I will give about computing in general for people new to computing
 
 :evergreen_tree: :evergreen_tree: :christmas_tree: :christmas_tree: :evergreen_tree: :evergreen_tree:
+
 :christmas_tree: :christmas_tree: :santa: :santa: :christmas_tree: :christmas_tree:
 
 ## Personal note

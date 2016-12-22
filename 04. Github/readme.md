@@ -11,7 +11,7 @@
 
 ## Github account and Git
 1. Create an account on [**Github**][github_link]
-2. Download and install [**Git**][git_link] (*already done normally*)
+2. Download and install [**Git**][git_link]
 
 ## Create your *repository* on Github
 1. Go to [**github.com/new**](https://www.github.com/new)
@@ -46,7 +46,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
 
 ## Add and upload your changes to Github
 8. In your terminal, enter `git add readme.md`
-9. Enter `git commit -m "Added the readme file about this project"
+9. Enter `git commit -m "Added the readme file about this project"`
 10. Enter `git push`
 11. Go to [github.com/**denisa**/christmas-project](https://www.github.com/denisa/christmas-project). 
     There is now one file *readme.md* and as you can see it is displayed nicely below :open_mouth:
@@ -89,10 +89,12 @@ This is my christmas project to understand the basics of *Git* and *Github*
   4. In the terminal, enter `touch requirements.txt` to create the file *requirements.txt* :new:
 2. Updating Github with your changes
   1. Enter `git add Vagrantfile requirements.txt`
-  2. Enter `git commit -m "Added initial Vagrantfile and requirements files"
+  2. Enter `git commit -m "Added initial Vagrantfile and requirements files"`
   3. Enter `git push`
   
 
+Time to use your brain and write [Python code][lesson_05] :snake:
+  
 ## More advanced: Probably see that later on :dizzy_face:
 - Branches
   - `git checkout -b new-branch` to create a new branch`
@@ -103,3 +105,4 @@ This is my christmas project to understand the basics of *Git* and *Github*
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join
 [git_link]: https://www.git-scm.com/downloads
+[lesson_05]: /05.%20Python

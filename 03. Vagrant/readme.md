@@ -21,7 +21,7 @@
 ## Install Vagrant
 1. Download and install [**Virtual Box**][virtualbox_link]
 2. Download and install [**Vagrant**][vagrant_link]
-3. **ONLY** IF YOU ENCOUNTER PROBLEMS LATER, check the [Hardware Virtualization Stuff](#Hardware%20Virtualization%20Stuff)
+3. **ONLY** IF YOU ENCOUNTER PROBLEMS LATER, check the [Hardware Virtualization Stuff](#hardware-virtualization-stuff-rotating_light)
 
 ## Vagrantfile and simplest Vagrant VM
 1. Launch your terminal (*Terminal* or *cmd.exe*) :black_small_square:
@@ -29,11 +29,11 @@
 3. Enter `touch Vagrantfile` to create a new file called *Vagrantfile* :new:
 4. Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
 5. Copy this into it and save it:
-  ```Ruby
-  Vagrant.configure(2) do |config|
-    config.vm.box = "ubuntu/trusty64"
-  end
-  ```
+```Ruby
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty64"
+end
+```
 6. Back to your terminal, enter **`vagrant up`** :sparkles:
   - This setup up the VM according to your *Vagrantfile*
   - It will show a lot of BS you don't need to know about
@@ -101,11 +101,12 @@ Explanations:
 - **`vagrant halt`** to shutdown the VM :zzz:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
-- We will see in [lesson 05][lesson_05]: **`vagrant provision`** (update the running VM)
+- We will see in [lesson 06][lesson_06]: **`vagrant provision`** (update the running VM)
 
-Time to see how to make use of [git and Github][lesson_04]
+Time to see how to make use of [git and Github][lesson_04] :octocat:
 
 ### Hardware Virtualization Stuff :rotating_light:
+**ONLY IN CASE OF PROBLEM...**
 - Check your *Hardware Virtualization* is ON in your BIOS
   1. Reboot computer
   2. Press on DEL (or F2, F10, F12) several times when it starts booting
@@ -120,4 +121,4 @@ Time to see how to make use of [git and Github][lesson_04]
 [git_link]: https://www.git-scm.com/downloads
 [virtualbox_link]: https://www.virtualbox.org/wiki/Downloads
 [lesson_04]: /04.%20Github
-[lesson_05]: /05.%20Excel%20file%20and%20data
+[lesson_06]: /06.%20Python%20and%20Excel

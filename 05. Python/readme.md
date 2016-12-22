@@ -32,7 +32,7 @@ Write your own Python code to achieve something basic a business would want.
   #we use float otherwise 5/2 = 2 and not 2.5
   age += float(present_day - birthday_day)/365
   # += is a shortcut for age = age + ..
-  print "You are " + str(age) + " years old :wink:"        
+  print "You are " + str(age) + " years old :P"        
   ```
 3. Launch your VM with `vagrant up`
 4. Log into your VM with `vagrant ssh`
@@ -42,7 +42,7 @@ Write your own Python code to achieve something basic a business would want.
 ## Perform an average on a list of numbers
 1. Just switch to your code editor again, delete all the code
 2. Don't close Vagrant :wink:
-3. Now just copy and try to understand that code (we have see that in lesson 2):
+3. Now just copy and try to understand that code (we saw that in lesson 2):
   ```python
   #The following defines a 'function' to perform an average on multiple numbers
   #A 'function' is great because we can re-use as shown at the bottom of the code
@@ -67,7 +67,7 @@ Write your own Python code to achieve something basic a business would want.
   print "average3 = " + str(average3) #average3 is (3+4)/2 = 7/2 = 3.5
   ```
 4. As before, go on your guest terminal (VM) and enter `python mycode.py`
-- *Note*: You can try the up arrow which brings up your last command :wink:
+- *Note*: You can try the **up** arrow which brings up your last command :wink:
 
 ## Write your code now
 We now have a Christmas online shop, selling Chritmas trees, 

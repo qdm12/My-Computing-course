@@ -1,4 +1,4 @@
-# 6. Excel file and data
+# 6. Python and Excel
 
 ![Excel][excel_image]
 
