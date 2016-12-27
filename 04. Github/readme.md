@@ -71,7 +71,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
   Vagrant.configure(2) do |config|
     config.vm.provider "virtualbox" do |vb|
       vb.memory = "512"
-      vb.cpus = 1
+      vb.cpus = 2
       vb.name = "Vagrant-virtual-machine"
     end
     config.vm.hostname = "denisa"
