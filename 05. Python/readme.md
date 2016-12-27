@@ -6,7 +6,7 @@
 Write your own Python code to achieve something basic a business would want.
 
 ## Calculate your age in Python
-1. In your host terminal, enter `touch mycode.py` to create :new: the file *mycode.py*
+1. In your host terminal and in your project, enter `touch mycode.py` to create the file *mycode.py* :new:
 2. Open *mycode.py* with your code editor
 3. Copy the following into it:
   ```python
@@ -53,7 +53,7 @@ Write your own Python code to achieve something basic a business would want.
     for number in numbers_list:
         sum += number
     # Divides the sum by the number of numbers
-    average = float(sum) / numbers_list.length
+    average = float(sum) / len(numbers_list)
     # WE USE float() otherwise the division does not result 
     # in a floating number
     return average
