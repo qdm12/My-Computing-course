@@ -3,12 +3,12 @@
 ![Code writing example][code_writing]
 
 ## Code editor
-- There is atom.io which is great:
+- For general use, there is atom.io:
 
 [![Atom.io][atom_image]][atom_link]
 
-- For Python only, you could use [Liclipse][liclipse_link]
-- On Mac OSX, you can use [Coda 2][coda_link]
+- For *Python*, you can use [Liclipse][liclipse_link] and don't forget to get [Java][Java_link]
+- On Mac OSX, you can use [Coda 2][coda_link] or Sublim Text
 - On Windows, you can use [Notepad++][npp_link]
 
 ## Test your code ASAP
@@ -102,6 +102,7 @@ Before going any further, time to [Vagrant up][lesson_03]
 [atom_image]: /internals/icons/atom.io.png "Atom.io"
 [code_writing]: /internals/gifs/code_writing.gif
 [liclipse_link]: https://www.liclipse.com/download.html
+[Java_link]: https://www.java.com/en/download
 [coda_link]: https://www.panic.com/coda/
 [npp_link]: https://www.notepad-plus-plus.org/download/v7.2.2.html
 [lesson_03]: /03.%20Vagrant

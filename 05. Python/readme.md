@@ -86,63 +86,77 @@ We will only focus on last Sunday, which has the following record of transaction
 - At 3:10PM, Audrey bought 2 Chritmas garden gnomes and 3 Christmas balls
 - At 6:00PM, John bought 1 Christmas balls
 
-We also have the prices of each of these items:
+We also have the prices we have set for each of these items:
 - Christmas tree is priced at $30
 - Christmas garden gnome is priced at $7.50
 - Christmas chocolates are priced at $12
 - Christmas balls is priced at $1.75
 
-Luckily, some software engineer who now left us already integrated that data in Python:
+Luckily, some software engineer who now left us already integrated that data in some Python code:
 ```python
 class Transaction(object): #don't be scared
     def __init__(self, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
+		#0 by default for trees, gnomes, chocolates and balls
         self.time = time
         self.client = client
         self.trees = trees
         self.gnomes = gnomes
         self.chocolates = chocolates
         self.balls = balls
-        
-    def __repr__(self):
-        #This is used to print the Transaction 'object'
-        return "At "+str(time)+" minutes, "+client+" bought "+ \
-                str(trees)+" trees, "+str(gnomes)+" gnomes, "+ \
-                str(chocolates)+" chocolates and "+str(balls)+" balls"
 
 transactions = [] #'list' structure
-t = Transaction(8*60 + 35, "John", trees=2, chocolates=1)
+t = Transaction("8:35AM", "John", trees=2, chocolates=1)
 transactions.append(t)
-t = Transaction(10*60 + 45, "Mike", trees=1, gnomes=12)
+t = Transaction("10:45AM", "Mike", trees=1, gnomes=12)
 transactions.append(t)
-t = Transaction(14*60 + 45, "Mike", gnomes=2)
+t = Transaction("2:45PM", "Mike", gnomes=2)
 transactions.append(t)
-t = Transaction(15*60 + 10, "Audrey", gnomes=2, balls=3)
+t = Transaction("3:10PM", "Audrey", gnomes=2, balls=3)
 transactions.append(t)
-t = Transaction(18*60 + 0, "John", balls=1)
+t = Transaction("6:00PM", "John", balls=1)
 
 prices = dict() #'dictionary' structure
 prices["tree"] = 30
 prices["gnome"] = 7.5
 prices["chocolate"] = 12
 prices["ball"] = 1.75
-
-print "Prices: ", prices
-print "First transaction: ", transactions[0]
-print "Second transaction: ", transactions[1]
-print "Last transaction: ", transactions[len(transactions)]
 ```
 
-- Now we need to find how much we have sold for last Sunday.
-- Test the code above, understand how it works with `print`.
-- Then write a function following this format:
+1. First, we want to find how much we have sold overall that last Sunday
+  - Test the code above, understand how it works with `print`.
+    - For example you can add `print prices` or `print transactions[2].client` at the end of the code
+  - Then write a function following this format:
 ```python
 def find_total_sales(transactions, prices):
     total_sales = 0
-    # Fill this in. Use for loops !
-    # Advice: Accumulate the total number of trees and so on and then multiply by the price.
-    # Multiply like c = 2*5
+    # Fill this in
+	# Use for loops (for element in elements_list: ...)
+	# Advice:
+	# 1. Accumulate the total number of trees bought Sunday
+	# 2. Accumulate the total number of gnomes bought Sunday
+	# 3. Accumulate the total number of chocolates bought Sunday
+	# 4. Accumulate the total number of balls bought Sunday
+	# 5. Multiply each number of X by its associated price
+	# 6. Sum all the 4 multiplication results to get the total sale of Sunday
+    #    PS: Multiply with this syntax c = 2*5
+	return total_sales
 ```
-
+  - If you can't make it, you can have a look at the file `mycode1.py` online.
+2. The second task is to find percentages of each product as its total sale participation.
+  - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
+    tree total sale participation is 100 * (3*$30)/$150 = 60%.
+  - We want this information for the same Sunday as before.
+```python
+def find_participation(product_name, transactions, prices):
+	total_sales = find_total_sales(transactions, prices)
+	if product_name == "tree":
+		# find total quantity sold, then multiply by price of a tree
+		# Then do 100 * what you've found / total_sales
+		# return that !
+	elif product_name == "ball":
+		#...
+	# ...
+```
 
 
   
