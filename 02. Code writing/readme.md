@@ -3,13 +3,10 @@
 ![Code writing example][code_writing]
 
 ## Code editor
+- For Python, install [Liclipse][liclipse_link]
 - For general use, there is atom.io:
 
 [![Atom.io][atom_image]][atom_link]
-
-- For *Python*, you can use [Liclipse][liclipse_link] and don't forget to get [Java][Java_link]
-- On Mac OSX, you can use [Coda 2][coda_link] or Sublim Text
-- On Windows, you can use [Notepad++][npp_link]
 
 ## Test your code ASAP
 - Always **test** your code by running it :running:
@@ -96,7 +93,6 @@ def find_average(numbers_list):
 - And **for loops**, but I'll teach you that
 
 Before going any further, time to [Vagrant up][lesson_03]
-
 
 [atom_link]: https://www.atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"

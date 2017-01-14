@@ -7,7 +7,7 @@ Write your own Python code to achieve something basic a business would want.
 
 ## Calculate your age in Python
 1. In your host terminal and in your project, enter `touch mycode.py` to create the file *mycode.py* :new:
-2. Open *mycode.py* with your code editor
+2. Open *mycode.py* with **PyCharm**
 3. Copy the following into it:
   ```python
   import time
@@ -40,7 +40,7 @@ Write your own Python code to achieve something basic a business would want.
 6. Enter `python mycode.py` :wink:
 
 ## Perform an average on a list of numbers
-1. Just switch to your code editor again, delete all the code
+1. Just switch to your  (PyCharm) again, delete all the code
 2. Don't close Vagrant :wink:
 3. Now just copy and try to understand that code (we saw that in lesson 2):
   ```python
@@ -70,6 +70,25 @@ Write your own Python code to achieve something basic a business would want.
 - *Note*: You can try the **up** arrow which brings up your last command :wink:
 
 ## Write your code now
+### Setting up Liclipse
+To see what syntax errors or what possibilities you have while writing code,
+you need to *link* the Python interpreter of the *Vagrant VM* to your *Liclipse editor*.
+1. 
+TO COMPLETE
+
+
+
+
+
+
+
+
+
+
+
+
+
+### The "scenario"
 We now have a Christmas online shop, selling Chritmas trees, 
 Christmas garden gnomes, Chritmas chocolates and Chritmas balls.
 And we are quite popular, with thousands of sales just before Chritmas.
@@ -122,6 +141,7 @@ prices["chocolate"] = 12
 prices["ball"] = 1.75
 ```
 
+### What is wanted
 1. First, we want to find how much we have sold overall that last Sunday
   - Test the code above, understand how it works with `print`.
     - For example you can add `print prices` or `print transactions[2].client` at the end of the code
