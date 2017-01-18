@@ -15,21 +15,21 @@
 
 ## Create your *repository* on Github
 1. Go to [**github.com/new**](https://www.github.com/new)
-2. Enter the repository name "christmas-project" :santa: and **Create repository**
-3. If your username is *denisa*, copy your repository link https://github.com/denisa/christmas-project.git
+2. Enter the repository name "first-project" and **Create repository**
+3. If your username is *denisa*, copy your repository link https://github.com/denisa/first-project.git
 
 ## **Clone** your repository
-4. In your terminal, enter `git clone https://github.com/denisa/christmas-project.git`
+4. In your terminal, enter `git clone https://github.com/denisa/first-project.git`
 
 ## Modify your **local** repository
-5. Enter `cd christmas-project` :open_file_folder:
+5. Enter `cd first-project` :open_file_folder:
 6. Enter `touch readme.md` and open this new file with your text editor :new:
 7. Copy and paste this into *readme.md*:
 ```
-# christmas-project
+# first-project
 
 ## What is this?
-This is my christmas project to understand the basics of *Git* and *Github*
+This is my first project to understand the basics of *Git* and *Github*
 
 ## What was **learnt**?
 - `git clone`
@@ -46,14 +46,14 @@ This is my christmas project to understand the basics of *Git* and *Github*
 
 ## Add and upload your changes to Github
 8. In your terminal, enter `git add readme.md`
-9. Enter `git commit -m "Added the readme file about this project"`
+9. Enter `git commit -m "Added the readme file"`
 10. Enter `git push`
-11. Go to [github.com/**denisa**/christmas-project](https://www.github.com/denisa/christmas-project). 
+11. Go to [github.com/**denisa**/first-project](https://www.github.com/denisa/first-project). 
     There is now one file *readme.md* and as you can see it is displayed nicely below :open_mouth:
 
 ## How someone else working on this code could affect you
 ### Modify directly on Github (*don't do that except for README.md*)
-1. On your christmas-project Github webpage, click on **readme.md**
+1. On your first-project Github webpage, click on **readme.md**
 2. Click on the pencil :pencil2: on the top right corner to edit the file
 3. Change something and click on **Commit changes**
 
@@ -64,7 +64,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
 
 ## Time to be useful: adding two real files
 1. Creating the files on your computer
-  1. `cd` to your *christmas-project*
+  1. `cd` to your *first-project*
   2. Enter `touch Vagrantfile` to create the file *Vagrantfile* :new:
   3. With your code editor, copy the following in the *Vagrantfile*
   ```ruby
@@ -78,8 +78,7 @@ This is my christmas project to understand the basics of *Git* and *Github*
     config.vm.box = "ubuntu/trusty64"
     config.vm.provision "shell", inline: <<-SHELL
       sudo apt-get update
-      sudo apt-get install -y git 
-      sudo apt-get install -y python-pip python-dev
+      sudo apt-get install -y git python-pip python-dev
       sudo apt-get -y autoremove
       cd /vagrant
       sudo pip install -r requirements.txt  

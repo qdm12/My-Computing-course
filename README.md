@@ -1,18 +1,6 @@
 # My-Computing-course
 This is a course I will give about computing in general for people new to computing
 
-:evergreen_tree: :evergreen_tree: :christmas_tree: :christmas_tree: :evergreen_tree: :evergreen_tree:
-
-:christmas_tree: :christmas_tree: :santa: :santa: :christmas_tree: :christmas_tree:
-
-## Personal note
-All this stuff is not easy and more than half of it is quite advanced.
-This is not about coding hardcore useless code, it's about learning 
-as many different technologies and tools as possible by doing things.
-If you follow all the steps, you will end up with an advanced project that 
-you can easily inspire for your own other projects. Good luck ! :smile
-
-
 ## Lessons
 1. The program :floppy_disk:
 2. Code writing :computer:
@@ -35,3 +23,9 @@ you can easily inspire for your own other projects. Good luck ! :smile
 
 ## Resources
 
+## Personal note
+All this stuff is not easy and more than half of it is quite advanced.
+This is not about coding hardcore useless code, it's about learning 
+as many different technologies and tools as possible by doing things.
+If you follow all the steps, you will end up with an advanced project that 
+you can easily inspire for your own other projects. Good luck ! :smile:

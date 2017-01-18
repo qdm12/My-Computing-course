@@ -3,7 +3,6 @@
 ![Code writing example][code_writing]
 
 ## Code editor
-- For Python, install [Liclipse][liclipse_link]
 - For general use, there is atom.io:
 
 [![Atom.io][atom_image]][atom_link]
@@ -13,7 +12,7 @@
   - Even with some fake data you make up
   - Find a :bug: (*bug*) early !
 - Use the *Python console* for simple stuff, by entering `python` in a terminal
-- Run directly your code by entering `python mycode.py` in a terminal (or use Liclipse)
+- Run directly your code by entering `python mycode.py` in a terminal
 
 ## Code style :computer:
 - Your code has to be understandable by **others** (and **you** in the *future*)

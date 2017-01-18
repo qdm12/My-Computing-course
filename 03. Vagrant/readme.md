@@ -77,8 +77,7 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y git 
-    sudo apt-get install -y python-pip python-dev
+    sudo apt-get install -y git python-pip python-dev
     sudo apt-get -y autoremove
     cd /vagrant
     sudo pip install -r requirements.txt  
@@ -92,12 +91,13 @@ Explanations:
 - `config.vm.hostname = "denisa"` sets the VM's username
 - `config.vm.box = "ubuntu/trusty64"` sets the VM's OS to use which is downloaded only once
 - `config.vm.provision "shell", inline: <<-SHELL` tells `vagrant up` to launch the terminal of the new VM
-- `sudo apt-get install git` installs git on the VM for example
+- `sudo apt-get install -y git` installs git on the VM for example
 - The rest will be explained later
 
 # Essential to remember
 - **Vagrantfile** to describe VM :memo:
 - **`vagrant up`** to create or start the VM :rocket:
+- **`vagrant ssh`** to "log in" the VM
 - **`vagrant halt`** to shutdown the VM :zzz:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:

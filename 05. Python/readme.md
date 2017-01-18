@@ -7,7 +7,7 @@ Write your own Python code to achieve something basic a business would want.
 
 ## Calculate your age in Python
 1. In your host terminal and in your project, enter `touch mycode.py` to create the file *mycode.py* :new:
-2. Open *mycode.py* with **PyCharm**
+2. Open *mycode.py* with `atom mycode.py`
 3. Copy the following into it:
   ```python
   import time
@@ -40,8 +40,8 @@ Write your own Python code to achieve something basic a business would want.
 6. Enter `python mycode.py` :wink:
 
 ## Perform an average on a list of numbers
-1. Just switch to your  (PyCharm) again, delete all the code
-2. Don't close Vagrant :wink:
+1. Just switch to *Atom* again, delete all the code
+2. Don't shutdown Vagrant :wink:
 3. Now just copy and try to understand that code (we saw that in lesson 2):
   ```python
   #The following defines a 'function' to perform an average on multiple numbers
