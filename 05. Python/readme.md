@@ -71,10 +71,43 @@ Write your own Python code to achieve something basic a business would want.
 
 ## Write your code now
 ### Setting up Liclipse
-To see what syntax errors or what possibilities you have while writing code,
-you need to *link* the Python interpreter of the *Vagrant VM* to your *Liclipse editor*.
-1. 
-TO COMPLETE
+Although you can write code in any code editor *"blindly"*, it is better to see 
+what syntax errors or what possibilities you have while writing code.
+Unfortunately, Vagrant/Pydev/Python/BunchOfOtherThings are stupid on something called *remote debugging*
+except if you spend $200 on a program called *Pycharm* but we're **cheap** so we will go a harder way:
+1. Install [**Python 2.7**][python_link] on your computer.
+2. Install [**Liclipse**][liclipse_link] on your computer.
+3. Launch Liclipse, choose **Liclipse dark them**, then choose a workplace as it prompts for it (and tick the *always use this workplace* box)
+4. In Liclipse, on the top right, click on **File**, **New**, **Pydev project**
+	1. For the project name, enter *first-project* then click on **Finish**
+	2. It will prompt you to configure a Python *interpreter*, just click on **Quick auto-config**
+	3. In your workplace, you now have a directory *first-project* with nothing in it; but Python is ready !
+
+Now we want to add what we've done in the previous [Github lesson 4][lesson_04]:
+- Nerdy way, with your terminal:
+	- Enter `cp -fr /home/username/lesson_04/first-project/* /home/username/workplace/first-project/`
+- Normal way, with your file explorer:
+	1. Go to your *first-project* directory you have cloned in lesson 4 with **git**.
+	2. Select all the files **including** the **.git** sub-directory (which contain all the git & github information)
+	3. Copy them and paste them into the *first-project* directory created in the Liclipse workspace directory.
+
+Now we want to create another Python file *mycode.py*:
+- Option 1: In your terminal, `cd` to the Liclipse's *first-project* directorty and enter `touch mycode.py`
+- Option 2: In Liclipse, click on **File**, **New**, **Pydev Module**, enter *mycode.py* in the name field and click on **Finish**
+- Option 3: In your file explorer, create a file named *mycode.py*
+
+Let's just test out the local Python + Liclipse setup now:
+1. Open *mycode.py* in Liclipse from the left directory pane (click on *first-project*)
+2. Write `print "Hello"` in the *mycode.py*
+3. Run the code by pressing on the *Play* button on the top or by pressing your **F9** key. 
+  *Note that you can still run that code with `python mycode.py` in your terminal or in Vagrant as before.*
+4. You should see *Hello* in the Liclipse bottom pane.
+
+Now let's show how errors work, just do the quick following:
+- Change *"Hello"* to *x* for example and save the code (use **CMD**+**S** or **CTRL**+**S**)
+- First 
+
+  
 
 
 
@@ -179,5 +212,7 @@ def find_participation(product_name, transactions, prices):
 ```
 
 
-  
 [python_image]: /internals/icons/python.png
+[python_link]: https://www.python.org/downloads/release/python-2713/
+[liclipse_link]: https://www.liclipse.com/download.html
+[lesson_04]: /04.%20Github

@@ -96,8 +96,5 @@ Before going any further, time to [Vagrant up][lesson_03]
 [atom_link]: https://www.atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"
 [code_writing]: /internals/gifs/code_writing.gif
-[liclipse_link]: https://www.liclipse.com/download.html
-[Java_link]: https://www.java.com/en/download
-[coda_link]: https://www.panic.com/coda/
 [npp_link]: https://www.notepad-plus-plus.org/download/v7.2.2.html
 [lesson_03]: /03.%20Vagrant
