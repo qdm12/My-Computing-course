@@ -105,7 +105,14 @@ Let's just test out the local Python + Liclipse setup now:
 
 Now let's show how errors work, just do the quick following:
 - Change *"Hello"* to *x* for example and save the code (use **CMD**+**S** or **CTRL**+**S**)
-- First 
+- Syntax errors and logical errors
+	- First, you'll see a red cross on the line and *x* will be underlined in red
+	- Hover over the *red cross* or the *x* and it will say **Undefined variable: x**
+	- Indeed, the variable x does not exist, so just add x = "Hello" above that line and save and it won't show any errors anymore.
+- Runtime errors
+	- These are errors that only occur when the code runs and that are not syntax or simple logical errors.
+	- These are usually harder to *debug* but Liclipse & Python make this quite easy
+	- 
 
   
 
