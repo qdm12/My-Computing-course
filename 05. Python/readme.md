@@ -161,24 +161,32 @@ Luckily, some software engineer who now left us already integrated that data in 
 ```python
 class Transaction(object): #don't be scared
     def __init__(self, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
-		#0 by default for trees, gnomes, chocolates and balls
+		# 0 by default for trees, gnomes, chocolates and balls
         self.time = time
         self.client = client
         self.trees = trees
         self.gnomes = gnomes
         self.chocolates = chocolates
         self.balls = balls
+        
+    def __repr__(self):
+        return "At "+self.time+" "+self.client+" bought "+str(self.trees)+\
+                " trees, "+str(self.gnomes)+" gnomes, "+str(self.chocolates)+\
+                " chocolates and "+str(self.balls)+" balls."
 
+t1 = Transaction("8:35AM", "John", trees=2, chocolates=1)
+t2 = Transaction("10:45AM", "Mike", trees=1, gnomes=12)
+t3 = Transaction("2:45PM", "Mike", gnomes=2)
+t4 = Transaction("3:10PM", "Audrey", gnomes=2, balls=3)
+t5 = Transaction("6:00PM", "John", balls=1)
 transactions = [] #'list' structure
-t = Transaction("8:35AM", "John", trees=2, chocolates=1)
-transactions.append(t)
-t = Transaction("10:45AM", "Mike", trees=1, gnomes=12)
-transactions.append(t)
-t = Transaction("2:45PM", "Mike", gnomes=2)
-transactions.append(t)
-t = Transaction("3:10PM", "Audrey", gnomes=2, balls=3)
-transactions.append(t)
-t = Transaction("6:00PM", "John", balls=1)
+transactions.append(t1)
+transactions.append(t2)
+transactions.append(t3)
+transactions.append(t4)
+transactions.append(t5)
+print "Last transaction t5 was: ", t5
+
 
 prices = dict() #'dictionary' structure
 prices["tree"] = 30
