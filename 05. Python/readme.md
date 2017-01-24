@@ -69,12 +69,16 @@ Write your own Python code to achieve something basic a business would want.
 4. As before, go on your guest terminal (VM) and enter `python mycode.py`
 - *Note*: You can try the **up** arrow which brings up your last command :wink:
 
-## Write your code now
-### Setting up Liclipse
+## How to write your code
+
+### Setting up Liclipse and Python
+
 Although you can write code in any code editor *"blindly"*, it is better to see 
 what syntax errors or what possibilities you have while writing code.
+
 Unfortunately, Vagrant/Pydev/Python/BunchOfOtherThings are stupid on something called *remote debugging*
-except if you spend $200 on a program called *Pycharm* but we're **cheap** so we will go a harder way:
+except if you spend $200 on a program called *Pycharm* but we're **cheap** so we will go a harder way...
+
 1. Install [**Python 2.7**][python_link] on your computer.
 2. Install [**Liclipse**][liclipse_link] on your computer.
 3. Launch Liclipse, choose **Liclipse dark them**, then choose a workplace as it prompts for it (and tick the *always use this workplace* box)
@@ -83,50 +87,52 @@ except if you spend $200 on a program called *Pycharm* but we're **cheap** so we
 	2. It will prompt you to configure a Python *interpreter*, just click on **Quick auto-config**
 	3. In your workplace, you now have a directory *first-project* with nothing in it; but Python is ready !
 
-Now we want to add what we've done in the previous [Github lesson 4][lesson_04]:
+### Add what you've done to Liclipse's project
+To add what we've done in the previous [Github lesson 4][lesson_04]:
 - Nerdy way, with your terminal:
-	- Enter `cp -fr /home/username/lesson_04/first-project/* /home/username/workplace/first-project/`
+	- Modify and enter `cp -fr /home/username/lesson_04/first-project/* /home/username/workplace/first-project/`
 - Normal way, with your file explorer:
 	1. Go to your *first-project* directory you have cloned in lesson 4 with **git**.
 	2. Select all the files **including** the **.git** sub-directory (which contain all the git & github information)
 	3. Copy them and paste them into the *first-project* directory created in the Liclipse workspace directory.
 
-Now we want to create another Python file *mycode.py*:
-- Option 1: In your terminal, `cd` to the Liclipse's *first-project* directorty and enter `touch mycode.py`
+### Create the Python file (or *module*) mycode.py
+- Option 1: In your terminal, `cd` to the Liclipse's *first-project* directory and enter `touch mycode.py`
 - Option 2: In Liclipse, click on **File**, **New**, **Pydev Module**, enter *mycode.py* in the name field and click on **Finish**
 - Option 3: In your file explorer, create a file named *mycode.py*
 
-Let's just test out the local Python + Liclipse setup now:
+### Test out the installation Liclipse + Python
 1. Open *mycode.py* in Liclipse from the left directory pane (click on *first-project*)
-2. Write `print "Hello"` in the *mycode.py*
+2. Write `print "Hello"` in *mycode.py*
 3. Run the code by pressing on the *Play* button on the top or by pressing your **F9** key. 
   *Note that you can still run that code with `python mycode.py` in your terminal or in Vagrant as before.*
-4. You should see *Hello* in the Liclipse bottom pane.
+4. You should see *Hello* in the Liclipse bottom pane console.
 
-Now let's show how errors work, just do the quick following:
-- Change *"Hello"* to *x* for example and save the code (use **CMD**+**S** or **CTRL**+**S**)
-- Syntax errors and logical errors
-	- First, you'll see a red cross on the line and *x* will be underlined in red
-	- Hover over the *red cross* or the *x* and it will say **Undefined variable: x**
-	- Indeed, the variable x does not exist, so just add x = "Hello" above that line and save and it won't show any errors anymore.
-- Runtime errors
+### Liclipse and errors
+1. Syntax and obvious errors you make
+    - Change `"Hello"` to `x` for example and save the code (TIP: use **CMD**+**S** or **CTRL**+**S**)
+	- A *red cross* on the line and a red underlining the `x` will appear
+	- Hover over the *red cross* or the `x` and it will say **Undefined variable: x**
+	- Indeed, the variable `x` does not exist, so just add `x = "Hello"` above that line and save; errors will disappear.
+2. Runtime errors
 	- These are errors that only occur when the code runs and that are not syntax or simple logical errors.
 	- These are usually harder to *debug* but Liclipse & Python make this quite easy
-	- 
+	- As an example, let's say you want to read a file called **data.txt** with this code:
+    ```python
+    f = open("data.txt", "rb") #rb means in read mode
+    data = f.read()
+    print data
+    f.close()
+    ```
+    Just copy this code, and run it with Liclipse.
+    - Because there is no such file **data.txt**, the program fails at the line 1.
+    - It tells you why: `IOError: [Errno 2] No such file or directory: 'data.txt'`
+    - This `IOError` is called an **Exception** and there are plenty of other variants
+    - You can also click on it and it will direct you to the line failing in the code
+    - Note that the code works, but fails because of an external event
+    
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
+## Now write code
 
 ### The "scenario"
 We now have a Christmas online shop, selling Chritmas trees, 
