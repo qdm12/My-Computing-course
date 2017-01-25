@@ -6,20 +6,21 @@ This is a course I will give about computing in general for people new to comput
 2. Code writing :computer:
 3. Vagrant :crystal_ball:
 4. Github :octocat:
-5. Python :snake:
-6. Python and Excel
-7. Slack
-8. Python and database
-9. Unit tests
-10. Travis CI and coveralls
-11. Web data parsing
-12. User interface
-13. Behave
-14. Pydoc documentation
-15. Deploy to the cloud
-16. Parallel processing and GPUs
-17. Python and machine learning
-18. Security
+5. Python and setup :snake:
+6. Python and your first code
+7. Python and Excel
+8. Python: Web parsing
+9. Slack
+10. Python and database
+11. Unit tests
+12. Travis CI and coveralls
+13. User interface
+14. Behave
+15. Pydoc documentation
+16. Deploy to the cloud
+17. Parallel processing and GPUs
+18. Python and machine learning
+19. Security
 
 ## Resources
 
@@ -29,3 +30,9 @@ This is not about coding hardcore useless code, it's about learning
 as many different technologies and tools as possible by doing things.
 If you follow all the steps, you will end up with an advanced project that 
 you can easily inspire for your own other projects. Good luck ! :smile:
+
+## Ideas
+- Threads
+- duckdns
+- Hash
+- Flask

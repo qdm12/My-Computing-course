@@ -107,4 +107,4 @@ Time to use your brain and write [Python code][lesson_05] :snake:
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join
 [git_link]: https://www.git-scm.com/downloads
-[lesson_05]: /05.%20Python
+[lesson_05]: /05.%20Python%20and%20setup
