@@ -103,20 +103,20 @@ To add what we've done in the previous [Github lesson 4][lesson_04]:
 
 ### Ignore the Liclipse's project files for Git
 - The problem
-    1. In your terminal, enter `git status`
-    2. You will see in red two `modified:` concerning the project files *.project* and *.pydevproject*
-    3. These are only used by Liclipse to remember your theme and so on.
-    4. You don't want them to be uploaded to Github
+    - In your terminal, enter `git status`
+    - You will see in red two `modified:` concerning the project files *.project* and *.pydevproject*
+    - These are only used by Liclipse to remember your theme and so on.
+    - You don't want them to be uploaded to Github
 - The solution
-    1. Create a file *.gitignore*
-    2. Write the following into it and save it
+    - Create a file *.gitignore*
+    - Write the following into it and save it
     ```
     .project
     .pydevproject
     .vagrant
     ```
-    3. Enter `git status` again, and these files will disappear from git :wink:
-    4. *PS*: `.vagrant` is to ignore the VM files when you're gonna `vagrant up`
+    - Enter `git status` again, and these files will disappear from git :wink:
+    - *PS*: `.vagrant` is to ignore the VM files when you're gonna `vagrant up`
 - Why: because later on you might use `git add .` to add all the modifications made in all the files
 
 ### Create the Python file (or *module*) mycode.py
