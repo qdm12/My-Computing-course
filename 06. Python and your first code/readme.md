@@ -68,35 +68,35 @@ prices["ball"] = 1.75
   - Test the code above, understand how it works with `print`.
     - For example you can add `print prices` or `print transactions[2].client` at the end of the code
   - Then write a function following this format:
-```python
-def find_total_sales(transactions, prices):
-    total_sales = 0
-    # Fill this in
-	# Use for loops (for element in elements_list: ...)
-	# Advice:
-	# 1. Accumulate the total number of trees bought Sunday
-	# 2. Accumulate the total number of gnomes bought Sunday
-	# 3. Accumulate the total number of chocolates bought Sunday
-	# 4. Accumulate the total number of balls bought Sunday
-	# 5. Multiply each number of X by its associated price
-	# 6. Sum all the 4 multiplication results to get the total sale of Sunday
-    #    PS: Multiply with this syntax c = 2*5
-	return total_sales
-```
+    ```python
+    def find_total_sales(transactions, prices):
+        total_sales = 0
+        # Fill this in
+        # Use for loops (for element in elements_list: ...)
+        # Advice:
+        # 1. Accumulate the total number of trees bought Sunday
+        # 2. Accumulate the total number of gnomes bought Sunday
+        # 3. Accumulate the total number of chocolates bought Sunday
+        # 4. Accumulate the total number of balls bought Sunday
+        # 5. Multiply each number of X by its associated price
+        # 6. Sum all the 4 multiplication results to get the total sale of Sunday
+        #    PS: Multiply with this syntax c = 2*5
+        return total_sales
+    ```
   - If you can't make it, you can have a look at the file `mycode1.py` online.
 
 2. The second task is to find percentages of each product as its total sale participation.
   - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
     tree total sale participation is 100 * (3*$30)/$150 = 60%.
   - We want this information for the same Sunday as before.
-```python
-def find_participation(product_name, transactions, prices):
-	total_sales = find_total_sales(transactions, prices)
-	if product_name == "tree":
-		# find total quantity sold, then multiply by price of a tree
-		# Then do 100 * what you've found / total_sales
-		# return that !
-	elif product_name == "ball":
-		#...
-	# ...
-```
+    ```python
+    def find_participation(product_name, transactions, prices):
+        total_sales = find_total_sales(transactions, prices)
+        if product_name == "tree":
+            # find total quantity sold, then multiply by price of a tree
+            # Then do 100 * what you've found / total_sales
+            # return that !
+        elif product_name == "ball":
+            #...
+        # ...
+    ```

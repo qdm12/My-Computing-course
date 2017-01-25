@@ -50,22 +50,22 @@ Understand some Python, setup your installation and learn how to use some tools.
    #A 'function' is great because we can re-use as shown at the bottom of the code
    #The function is not ran except if it is "called" (below)
    def find_average(numbers_list):
-     # Sums all the numbers
-     sum = 0
-     for number in numbers_list:
-         sum += number
-     # Divides the sum by the number of numbers
-     average = float(sum) / len(numbers_list)
-     # WE USE float() otherwise the division does not result in a floating number
-     return average
-     
+       # Sums all the numbers
+       sum = 0
+       for number in numbers_list:
+           sum += number
+       # Divides the sum by the number of numbers
+       average = float(sum) / len(numbers_list)
+       # WE USE float() otherwise the division does not result in a floating number
+       return average
+
    #Main code being run
    average1 = find_average([2,4,6]) #we call the find_average function !
    print "average1 = " + str(average1) #average1 is (2+4+6)/3 = 12/3 = 4
-   
+
    average2 = find_average([1,3,5])
    print "average2 = " + str(average2) #average2 is (1+3+5)/3 = 9/3 = 3
-   
+
    average3 = find_average([average1, average2])
    print "average3 = " + str(average3) #average3 is (3+4)/2 = 7/2 = 3.5
    ```
@@ -109,13 +109,14 @@ To add what we've done in the previous [Github lesson 4][lesson_04]:
     4. You don't want them to be uploaded to Github
 - The solution
     1. Create a file *.gitignore*
-    2. Write the following into it:
+    2. Write the following into it and save it
     ```
     .project
     .pydevproject
+    .vagrant
     ```
-    And save it
     3. Enter `git status` again, and these files will disappear from git :wink:
+    4. *PS*: `.vagrant` is to ignore the VM files when you're gonna `vagrant up`
 - Why: because later on you might use `git add .` to add all the modifications made in all the files
 
 ### Create the Python file (or *module*) mycode.py
