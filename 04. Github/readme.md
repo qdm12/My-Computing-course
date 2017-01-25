@@ -15,15 +15,15 @@
 
 ## Create your *repository* on Github
 1. Go to [**github.com/new**](https://www.github.com/new)
-2. Enter the repository name "first-project" and **Create repository**
-3. If your username is *denisee*, copy your repository link https://github.com/denisee/first-project.git
+2. Enter the repository name "first-project" and click **Create repository**
+3. If your username is *denisee*, copy your repository Git link https://github.com/denisee/first-project.git
 
 ## **Clone** your repository
-4. In your terminal, enter `git clone https://github.com/denisee/first-project.git`
+4. In your terminal, enter `git clone https://github.com/denisee/first-project.git` :arrow_double_down:
 
-## Modify your **local** repository
+## Modify your *local* repository
 5. Enter `cd first-project` :open_file_folder:
-6. Enter `touch readme.md` and open this new file with your text editor :new:
+6. Enter `touch readme.md` :new: and open this new file with your text editor
 7. Copy and paste this into *readme.md*:
 ```
 # first-project
@@ -32,11 +32,11 @@
 This is my first project to understand the basics of *Git* and *Github*
 
 ## What was **learnt**?
-- `git clone`
+- `git clone` :arrow_double_down:
 - `git add`
 - `git commit -m "message"`
-- `git push`
-- `git pull`
+- `git push` :arrow_up:
+- `git pull` :arrow_down:
 - `git push -b existing-branch`
 - `git checkout -b new-branch`
 - `git checkout existing-branch`
@@ -47,28 +47,31 @@ This is my first project to understand the basics of *Git* and *Github*
 ## Add and upload your changes to Github
 8. In your terminal, enter `git add readme.md`
 9. Enter `git commit -m "Added the readme file"`
-10. Enter `git push`
+10. Enter `git push` :arrow_up: (*this uploads your changes to Github*)
 11. Go to [github.com/**denisee**/first-project](https://www.github.com/denisee/first-project). 
-    There is now one file *readme.md* and as you can see it is displayed nicely below :open_mouth:
+    There is now one file named *readme.md* and, as you can see, 
+    it is displayed nicely if you scroll down :open_mouth:
 
 ## How someone else working on this code could affect you
 ### Modify directly on Github (*don't do that except for README.md*)
-1. On your first-project Github webpage, click on **readme.md**
+1. On your *first-project* Github webpage, click on **readme.md**
 2. Click on the pencil :pencil2: on the top right corner to edit the file
-3. Change something and click on **Commit changes**
+3. Change something and click **Commit changes**
 
 ### Update your local repository
-4. Back on your computer's terminal, your *local* repository is now outdated
+4. Back on your computer's terminal, your *local* repository is now **outdated**
 5. To update it with your change, enter `git pull`
 6. This works the same when someone else works on the code and you want to get his or her changes
+7. If you overthink that, don't worry we use things called *branches* to avoid conflicts etc.
 
 ## Time to be useful: adding two real files
 1. Creating the files on your computer
-  1. `cd` to your *first-project*
-  2. Enter `touch Vagrantfile` to create the file *Vagrantfile* :new:
-  3. With your code editor, copy the following in the *Vagrantfile*
-  ```ruby
-  Vagrant.configure(2) do |config|
+    1. `cd` to your *first-project*
+    2. In the terminal, enter `touch requirements.txt` to create the file *requirements.txt* :new: but put nothing into it
+    3. Enter `touch Vagrantfile` to create the file *Vagrantfile* :new:
+    4. With your code editor, copy the following in the *Vagrantfile*
+    ```ruby
+    Vagrant.configure(2) do |config|
     config.vm.provider "virtualbox" do |vb|
       vb.memory = "512"
       vb.cpus = 2
@@ -83,20 +86,20 @@ This is my first project to understand the basics of *Git* and *Github*
       cd /vagrant
       sudo pip install -r requirements.txt  
     SHELL
-  end
-  ```
-  4. In the terminal, enter `touch requirements.txt` to create the file *requirements.txt* :new:
+    end
+    ```
 2. Updating Github with your changes
   1. Enter `git add Vagrantfile requirements.txt`
   2. Enter `git commit -m "Added initial Vagrantfile and requirements files"`
-  3. Enter `git push`
+  3. Enter `git push` :arrow_up:
   
 
 Time to use your brain and write [Python code][lesson_05] :snake:
   
 ## More advanced: Probably see that later on :dizzy_face:
 - Branches
-  - `git checkout -b new-branch` to create a new branch`
+  - `git checkout -b new-branch` to create a new branch
+  - `git checkout existing-branch` 
   - `git push -b new-branch` to push your changes to the branch "new-branch" created
   - You then have to merge it in the **master** branch through Github.
   - To change back to a branch, enter `git checkout myBranch`

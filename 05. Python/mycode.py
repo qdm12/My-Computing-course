@@ -1,23 +1,25 @@
-import time
+from datetime import datetime
 
-message = "Hello "
-name = "Denisa"
-print message + name
+name = raw_input("Hello ! Please enter your name: ")
+birth_date = raw_input("Enter your birth date in the format dd/mm/yyyy: ")
 
-#Your birthday date
-birthday_day = 2
-birthday_month = 12
-birthday_year = 1993
+print
+print "Hello "+name+"! I'm calculating your age, 1 second..."
+today_object = datetime.today()
+today_year = today_object.year
+today_month = today_object.month
+today_day = today_object.day
 
-#Gets the current date
-present_day = int(time.strftime("%d"))
-present_month = int(time.strftime("%m"))
-present_year = int(time.strftime("%Y"))
+birth_year = int(birth_date[6:10])
+birth_month = int(birth_date[3:5])
+birth_day = int(birth_date[0:2])
 #int() converts the 'text' (string) to an integer
 
-age = present_year - birthday_year
-age = age + float(present_month - birthday_month)/12
-#we use float otherwise 5/2 = 2 and not 2.5
-age += float(present_day - birthday_day)/365
-# += is a shortcut for age = age + ..
-print "You are " + str(age) + " years old :P" 
+age_year = today_year - birth_year
+age_month = today_month - birth_month
+age_day = today_day - birth_day
+
+age_float = age_year + float(age_month)/12 + float(age_day)/365
+#float() converts to a floating point number. It is necesary to floating point divisions !
+print "You are "+str(age_float)+" years old"
+#str() converts to 'text' (string)

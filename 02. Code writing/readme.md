@@ -3,13 +3,14 @@
 ![Code writing example][code_writing]
 
 ## Code editor
-- For general use, there is atom.io:
+- For general use, there is [atom.io][atom_link]:
 
 [![Atom.io][atom_image]][atom_link]
 
-## Test your code ASAP
+
+## Always test your code ASAP
 - Always **test** your code by running it :running:
-  - Even with some fake data you make up
+  - Even with some fake data you make up :abcd:
   - Find a :bug: (*bug*) early !
 - Use the *Python console* for simple stuff, by entering `python` in a terminal
 - Run directly your code by entering `python mycode.py` in a terminal
@@ -19,7 +20,7 @@
 - Write explicit code
   - Choose names wisely (for *variables*, *functions*, etc.)
   - Comment your code
-  - Check the input which can be trash
+  - Check the input which can be trash :hankey:
 - Think as your code as re-usable :recycle:
 - Good example :wink: :
 ```python

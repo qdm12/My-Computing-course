@@ -34,3 +34,8 @@ def find_average(numbers_list):
 	# When the function is called, it "returns" the average
 	# Example: x = find_average([2,4,7])
 	return average
+    
+if __name__ == "__main__":
+    numbers = [1,3,5,7,10]
+    average = find_average(numbers)
+    print "Average of "+str(numbers)+" is "+str(average)

@@ -27,43 +27,43 @@
 1. Launch your terminal (*Terminal* or *cmd.exe*) :black_small_square:
 2. Enter `mkdir NewDirectory && cd NewDirectory` :new:
 3. Enter `touch Vagrantfile` to create a new file called *Vagrantfile* :new:
-4. Open this *Vagrantfile* with your code editor (You can try with `atom Vagrantfile`) 
-5. Copy this into it and save it:
+4. Open this *Vagrantfile* with your code editor :computer: (**TIP:** You can try with `atom Vagrantfile`) 
+5. Copy this into it and save it (**TIP:** Use **CMD**+**S** or **CTRL**+**S** to save):
 ```Ruby
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
 end
 ```
 6. Back to your terminal, enter **`vagrant up`** :sparkles:
-  - This setup up the VM according to your *Vagrantfile*
-  - It will show a lot of BS you don't need to know about
+  - This create/launch a VM according to your *Vagrantfile*
+  - It will show a lot of things you don't need to know about
   - It will take some time :hourglass: to download *trusty64* the first time only
-7. Enter `vagrant ssh` to log in the VM.
+7. Enter `vagrant ssh` to *log in* the VM.
 8. In the VM (you are here), enter `cd /vagrant`
-9. In the VM, enter `ls` - That's the **shared** directory
+9. In the VM, enter `ls` to show what's there - The path `/vagrant` :point_left: is the **shared** directory
 10. In the VM, enter `exit` to go back to your host OS's terminal
 11. Enter `vagrant halt` to shutdown the VM.
-12. And/Or enter `vagrant destroy` to delete it completely.
+12. And/Or enter `vagrant destroy` to delete it completely :boom: (not necessary).
 
 ## Probems before Vagrant
 - It only works on my machine :poop:
 - OS compatibility issues, "Portability" :-1:
 - You don't remember how you made it work on your computer :-1:
-- Your program and environment should be like :sheep:, not like your :poodle:
+- Your program and environment should be like a :sheep:, not like your precious :poodle:
 
 ## Advantages
 - Creates an *environment* defined in the **Vagrantfile**
   - Specific OS (*ubuntu server* aka trusty64)
   - The *host OS*'s directory from where Vagrant is launched is shared at `/vagrant`.
-  - Specific applications (*git*, *python*, ...)
-  - Specific networking, CPUs, RAM
-- The **disposable** operating system (OS)
-  - Vagrant provide a disposable *OS* running in your computer's OS.
+  - Specific applications (*git*, *python*, ...) can be installed
+  - Specific networking, CPUs, RAM can be setup
+- The **disposable** OS
+  - Vagrant provide a disposable OS running in your computer's OS.
   - Your OS is not modified
-  - You can just *throw it away* and *re-create it*
-- Anyone can use it without knowing what is actually needed
-- Serves as a blueprint of what steps were taken to setup the environment for your program
-- You can easily re-produce the steps to deploy it to the cloud etc.
+  - You can just *throw it away* and *re-create it* :tada:
+- Anyone can use it without knowing what is actually needed :relaxed:
+- Serves as a blueprint :notebook: of what steps were taken to setup the environment for your program
+- You can easily re-produce the steps to deploy it to the cloud :cloud: etc. 
 
 ## More complete Vagrantfile (the initial one used in this project)
 ```Ruby
@@ -97,7 +97,7 @@ Explanations:
 # Essential to remember
 - **Vagrantfile** to describe VM :memo:
 - **`vagrant up`** to create or start the VM :rocket:
-- **`vagrant ssh`** to "log in" the VM
+- **`vagrant ssh`** to "log in" the VM :unlock:
 - **`vagrant halt`** to shutdown the VM :zzz:
 - **`vagrant destroy`** to destroy the VM :boom:
 - In the VM, the directory **`/vagrant`** is the shared directory :file_folder:
@@ -105,8 +105,8 @@ Explanations:
 
 Time to see how to make use of [git and Github][lesson_04] :octocat:
 
-### Hardware Virtualization Stuff :rotating_light:
-**ONLY IN CASE OF PROBLEM...**
+### :rotating_light: Hardware Virtualization Stuff :rotating_light:
+** :warning: ONLY IN CASE OF PROBLEM...**
 - Check your *Hardware Virtualization* is ON in your BIOS
   1. Reboot computer
   2. Press on DEL (or F2, F10, F12) several times when it starts booting
