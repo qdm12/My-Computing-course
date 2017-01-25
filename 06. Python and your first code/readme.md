@@ -64,10 +64,10 @@ prices["ball"] = 1.75
 ```
 
 ## What is wanted
-1. First, we want to find how much we have sold overall that last Sunday
-  - Test the code above, understand how it works with `print`.
+### Find how much we have sold overall that last Sunday
+- Test the code above, understand how it works with `print`.
     - For example you can add `print prices` or `print transactions[2].client` at the end of the code
-  - Then write a function following this format:
+- Then write a function following this format:
 ```python
 def find_total_sales(transactions, prices):
     total_sales = 0
@@ -83,12 +83,13 @@ def find_total_sales(transactions, prices):
     #    PS: Multiply with this syntax c = 2*5
     return total_sales
 ```
-  - If you can't make it, you can have a look at the file `mycode1.py` online.
+- If you can't make it, you can have a look at the file `mycode1.py` online.
 
-2. The second task is to find percentages of each product as its total sale participation.
-  - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
-    tree total sale participation is 100 * (3*$30)/$150 = 60%.
-  - We want this information for the same Sunday as before.
+### Find percentages of each product as its total sale participation
+- For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
+  tree total sale participation is 100 * (3*$30)/$150 = 60%.
+- We want this information for the same Sunday as before
+- Write a function following this format:
 ```python
 def find_participation(product_name, transactions, prices):
     total_sales = find_total_sales(transactions, prices)
@@ -100,3 +101,4 @@ def find_participation(product_name, transactions, prices):
         #...
     # ...
 ```
+- If you can't make it, you can have a look at the file `mycode2.py` online.
