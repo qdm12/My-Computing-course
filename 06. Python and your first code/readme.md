@@ -64,7 +64,7 @@ prices["ball"] = 1.75
 ```
 
 ## What is wanted
-### Find how much we have sold overall that last Sunday
+### PART 1 of 3: Find how much we have sold overall that last Sunday
 - Test the code above, understand how it works with `print`.
     - For example you can add `print prices` or `print transactions[2].client` at the end of the code
 - Then write a function following this format:
@@ -86,7 +86,7 @@ def find_total_sales(transactions, prices):
 ```
 - If you can't make it, you can have a look at the file `mycode1.py` online.
 
-### Find percentages of each product as its total sale participation
+### PART 2 of 3: Find percentages of each product as its total sale participation
 - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
   tree total sale participation is 100 * (3*$30)/$150 = 60%.
 - We want this information for the same Sunday as before
@@ -105,3 +105,35 @@ def find_participation(product_name, transactions, prices):
 	return participation
 ```
 - If you can't make it, you can have a look at the file `mycode2.py` online.
+
+### PART 3 of 3: Find who is the client who spent the most money
+- Accumulate the total amount of money spent for each client (use a `dict()`)
+- Find the maximum of money spent amongst those accumulations to find the target client
+- Follow this format
+```python
+def find_client_max_spent(transactions, prices):
+	money_spent = dict() #Dictionary so you can have 3 clients or 300 it will still work
+	for t in transactions:
+		# You can (efficiently) check if a client name is not present in the money_spent dict with: if "John" not in money_spent:
+		# do stuff here
+	# find maximum in dictionary and the associated client and store that in the variable client_max_spent
+	return client_max_spent
+```
+- Small **tip** to find the *key* associated with the maximum value in the dictionary money_spent
+	- You can go hardcore and write that function
+	```python
+	def find_max(money_spent):
+		max_value = -1
+		for client in money_spent:
+			if money_spent[client] > max_value:
+				max_value = money_spent[client]
+				max_client = client
+		return max_client
+	```
+	- Or you can Google, read 3 or 4 lines and find the fastest way to do it in 3 simple lines
+	```python
+	values = list(money_spent.values())
+	keys = list(money_spent.keys())
+	client_max_spent = keys[values.index(max(values))]
+	```
+- If you can't make it, you can have a look at the file `mycode3.py` online.
