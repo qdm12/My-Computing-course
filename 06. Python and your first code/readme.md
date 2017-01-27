@@ -72,15 +72,16 @@ prices["ball"] = 1.75
 def find_total_sales(transactions, prices):
     total_sales = 0
     # Fill this in
-    # Use for loops (for element in elements_list: ...)
+    # Use for loops like this:
+	# for element in elements_list:
+	#     element = element + 5
     # Advice:
     # 1. Accumulate the total number of trees bought Sunday
     # 2. Accumulate the total number of gnomes bought Sunday
     # 3. Accumulate the total number of chocolates bought Sunday
     # 4. Accumulate the total number of balls bought Sunday
-    # 5. Multiply each number of X by its associated price
-    # 6. Sum all the 4 multiplication results to get the total sale of Sunday
-    #    PS: Multiply with this syntax c = 2*5
+    # 5. Multiply each number of X by its associated price (Multiply with this syntax c = 2*5)
+    # 6. Sum all the 4 total sales to get the total sale of Sunday
     return total_sales
 ```
 - If you can't make it, you can have a look at the file `mycode1.py` online.
@@ -93,12 +94,14 @@ def find_total_sales(transactions, prices):
 ```python
 def find_participation(product_name, transactions, prices):
     total_sales = find_total_sales(transactions, prices)
-    if product_name == "tree":
-        # find total quantity sold, then multiply by price of a tree
-        # Then do 100 * what you've found / total_sales
-        # return that !
-    elif product_name == "ball":
-        #...
+	total_sales_product = 0
+	for t in transactions:
+		if product_name == "tree":
+			# Accumulate each transaction tree's sales in total_sales_product
+		elif product_name == "ball":
+			#...
     # ...
+	# You may have troubles here but it's good you'll learn that way !
+	return participation
 ```
 - If you can't make it, you can have a look at the file `mycode2.py` online.
