@@ -18,9 +18,10 @@ This is a course I will give about computing in general for people new to comput
 14. Behave
 15. Pydoc documentation
 16. Deploy to the cloud
-17. Parallel processing and GPUs
-18. Python and machine learning
-19. Security
+16. Continuous Pipeline to the cloud
+18. Parallel processing and GPUs
+19. Python and machine learning
+20. Security
 
 ## Resources
 
@@ -32,7 +33,15 @@ If you follow all the steps, you will end up with an advanced project that
 you can easily inspire for your own other projects. Good luck ! :smile:
 
 ## Ideas
+- Highlight file on HD, python vars on electronic circuits
+- from * import * different Python files
+- Tab shortcut command line
+- gitignore, no upload of big files
 - Threads
 - duckdns
 - Hash
 - Flask
+- Always have a Master branch deployable and working, passing the tests
+- Zenhub
+- Cloud: Bluemix PaaS, AWS IaaS,
+- GPU cuda and timing https://developer.nvidia.com/how-to-cuda-python
