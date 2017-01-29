@@ -92,7 +92,11 @@ This is my first project to understand the basics of *Git* and *Github*
   1. Enter `git add Vagrantfile requirements.txt`
   2. Enter `git commit -m "Added initial Vagrantfile and requirements files"`
   3. Enter `git push` :arrow_up:
-  
+
+## One last minute addition
+- Now that you master a few commands and the concept of Git...
+- Just install the [**GitKraken**][gitkraken_link] and set it up somehow for your repository
+- It's basically the same as before except it looks great and you understand what the hell is going on
 
 Time to use your brain and write [Python code][lesson_05] :snake:
   
@@ -107,4 +111,5 @@ Time to use your brain and write [Python code][lesson_05] :snake:
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join
 [git_link]: https://www.git-scm.com/downloads
+[gitkraken_link]: https://www.gitkraken.com/download
 [lesson_05]: /05.%20Python%20and%20setup
