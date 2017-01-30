@@ -83,13 +83,13 @@ if __name__ == "__main__":
 ## PIP Install Packages (*recursive acronym*)
 1. Python does not *understand* **.xlsx** files yet, we need to add a package
 2. It's dead simple.
-    1. [Google python xlsx][google_xlsx] and the first thing you see is **openpyxl**
-    2. Open a terminal, enter `pip install openpyxl`
-    3. At the top of **excel.py** just add and the SAVE:
+    - [Google python xlsx][google_xlsx] and the first thing you see is **openpyxl**
+    - Open a terminal, enter `pip install openpyxl`
+    - At the top of **excel.py** just add and the SAVE:
     ```python
     from openpyxl import load_workbook
     ```
-    4. You can now use the *load_workbook* function to read an Excel file in Python !!
+    - You can now use the *load_workbook* function to read an Excel file in Python !!
 3. Let's not forget about *Vagrant*... 
     - Look at the *Vagrantfile* with your code editor (**TIP:** Enter `cat Vagrantfile`) and you should see that:
     ```shell
