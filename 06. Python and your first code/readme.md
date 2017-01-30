@@ -29,8 +29,9 @@ We also have the prices we have set for each of these items:
 Luckily, some software engineer who now left us already integrated that data in some Python code:
 ```python
 class Transaction(object): #don't be scared
-    def __init__(self, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
+    def __init__(self, date, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
 		# 0 by default for trees, gnomes, chocolates and balls
+        self.date = date
         self.time = time
         self.client = client
         self.trees = trees
@@ -39,15 +40,15 @@ class Transaction(object): #don't be scared
         self.balls = balls
         
     def __repr__(self): #used when you do `print t1` (see below)
-        return "At "+self.time+" "+self.client+" bought "+str(self.trees)+\
-                " trees, "+str(self.gnomes)+" gnomes, "+str(self.chocolates)+\
-                " chocolates and "+str(self.balls)+" balls."
+        return "On "+self.date+" at "+self.time+" "+self.client+" bought "+\
+                str(self.trees)+" trees, "+str(self.gnomes)+" gnomes, "+\
+                str(self.chocolates)+" chocolates and "+str(self.balls)+" balls."
 
-t1 = Transaction("8:35AM", "John", trees=2, chocolates=1)
-t2 = Transaction("10:45AM", "Mike", trees=1, gnomes=12)
-t3 = Transaction("2:45PM", "Mike", gnomes=2)
-t4 = Transaction("3:10PM", "Audrey", gnomes=2, balls=3)
-t5 = Transaction("6:00PM", "John", balls=1)
+t1 = Transaction("30/01/2017", "8:35", "John", trees=2, chocolates=1)
+t2 = Transaction("30/01/2017", "10:45", "Mike", trees=1, gnomes=12)
+t3 = Transaction("30/01/2017", "14:45", "Mike", gnomes=2)
+t4 = Transaction("30/01/2017", "15:10", "Audrey", gnomes=2, balls=3)
+t5 = Transaction("30/01/2017", "18:00", "John", balls=1)
 transactions = [] #'list' structure
 transactions.append(t1)
 transactions.append(t2)
@@ -85,6 +86,7 @@ def find_total_sales(transactions, prices):
     return total_sales
 ```
 - If you can't make it, you can have a look at the file `mycode1.py` online.
+- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
 ### PART 2 of 3: Find percentages of each product as its total sale participation
 - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
@@ -105,6 +107,7 @@ def find_participation(product_name, transactions, prices):
 	return participation
 ```
 - If you can't make it, you can have a look at the file `mycode2.py` online.
+- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
 ### PART 3 of 3: Find who is the client who spent the most money
 - Accumulate the total amount of money spent for each client (use a `dict()`)
@@ -137,3 +140,10 @@ def find_client_max_spent(transactions, prices):
 	client_max_spent = keys[values.index(max(values))]
 	```
 - If you can't make it, you can have a look at the file `mycode3.py` online.
+- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
+
+WELL DONE ! You have wrote your first pieces of headaches in a Python program !
+
+Time to Python with [**Excel** and more real-life-like data][lesson_07]
+
+[lesson_07]: /07.%20Python%20and%20Excel

@@ -65,6 +65,8 @@ end
 - Serves as a blueprint :notebook: of what steps were taken to setup the environment for your program
 - You can easily re-produce the steps to deploy it to the cloud :cloud: etc. 
 
+***
+
 ## More complete Vagrantfile (the initial one used in this project)
 ```Ruby
 Vagrant.configure(2) do |config|
@@ -104,6 +106,14 @@ Explanations:
 - We will see in [lesson 06][lesson_06]: **`vagrant provision`** (update the running VM)
 
 Time to see how to make use of [git and Github][lesson_04] :octocat:
+
+## To add to your resume
+- Vagrant
+- VirtualBox
+
+***
+
+***
 
 ### :rotating_light: Hardware Virtualization Stuff :rotating_light:
 ** :warning: ONLY IN CASE OF PROBLEM...**

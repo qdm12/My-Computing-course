@@ -24,7 +24,7 @@
 ## Modify your *local* repository
 5. Enter `cd first-project` :open_file_folder:
 6. Enter `touch readme.md` :new: and open this new file with your text editor
-7. Copy and paste this into *readme.md*:
+7. Copy and paste this into *readme.md* (*.md* stands for **Markdown**):
 ```
 # first-project
 
@@ -101,12 +101,13 @@ This is my first project to understand the basics of *Git* and *Github*
 Time to use your brain and write [Python code][lesson_05] :snake:
   
 ## More advanced: Probably see that later on :dizzy_face:
-- Branches
-  - `git checkout -b new-branch` to create a new branch
-  - `git checkout existing-branch` 
-  - `git push -b new-branch` to push your changes to the branch "new-branch" created
-  - You then have to merge it in the **master** branch through Github.
-  - To change back to a branch, enter `git checkout myBranch`
+- Branches ! But just use GitKraken to check that out, it's way easier to understand !
+
+## To add to your resume
+- Git
+- Github
+- Markdown
+- GitKraken
   
 [github_image]: /internals/icons/github.png
 [github_link]: https://www.github.com/join

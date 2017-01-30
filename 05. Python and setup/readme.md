@@ -72,6 +72,8 @@ Understand some Python, setup your installation and learn how to use some tools.
 4. As before, go on your guest terminal (VM) and enter `python mycode.py`
 - *Note*: You can try the **up** arrow :arrow_up: which brings up your last command :wink:
 
+***
+
 ## How to write your code
 
 ### Setting up Liclipse and Python
@@ -114,9 +116,11 @@ To add what we've done in the previous [Github lesson 4][lesson_04]:
     .project
     .pydevproject
     .vagrant
+    *.pyc
     ```
     - Enter `git status` again, and these files will disappear from git :wink:
     - *PS*: `.vagrant` is to ignore the VM files when you're gonna `vagrant up`
+    - *PS*: `*.pyc` is to ignore any **.pyc** files *compiled* by Liclipse from your Python code
 - Why: because later on you might use `git add .` to add all the modifications made in all the files
 
 ### Create the Python file (or *module*) mycode.py
@@ -156,6 +160,9 @@ To add what we've done in the previous [Github lesson 4][lesson_04]:
     
 Now that you are ready to write some Python well... [lesson 6][lesson_06]
 
+## To add to your resume
+- Python 2.7
+- Liclipse
 
 [python_image]: /internals/icons/python.png
 [python_link]: https://www.python.org/downloads/release/python-2713/

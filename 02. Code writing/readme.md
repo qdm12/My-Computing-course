@@ -12,8 +12,8 @@
 - Always **test** your code by running it :running:
   - Even with some fake data you make up :abcd:
   - Find a :bug: (*bug*) early !
-- Use the *Python console* for simple stuff, by entering `python` in a terminal
-- Run directly your code by entering `python mycode.py` in a terminal
+- Use the *Python console* for simple stuff, by entering `python` in a terminal (see later)
+- Run directly your code by entering `python mycode.py` in a terminal (see later)
 
 ## Code style :computer:
 - Your code has to be understandable by **others** (and **you** in the *future*)
@@ -93,6 +93,9 @@ def find_average(numbers_list):
 - And **for loops**, but I'll teach you that
 
 Before going any further, time to [Vagrant up][lesson_03]
+
+## To add to your resume
+- Atom.io
 
 [atom_link]: https://www.atom.io
 [atom_image]: /internals/icons/atom.io.png "Atom.io"

@@ -1,3 +1,5 @@
+from openpyxl import load_workbook
+
 class Transaction(object):
     def __init__(self, date, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
 		# 0 by default for trees, gnomes, chocolates and balls
@@ -13,25 +15,6 @@ class Transaction(object):
         return "On "+self.date+" at "+self.time+" "+self.client+" bought "+\
                 str(self.trees)+" trees, "+str(self.gnomes)+" gnomes, "+\
                 str(self.chocolates)+" chocolates and "+str(self.balls)+" balls."
-
-t1 = Transaction("30/01/2017", "8:35", "John", trees=2, chocolates=1)
-t2 = Transaction("30/01/2017", "10:45", "Mike", trees=1, gnomes=12)
-t3 = Transaction("30/01/2017", "14:45", "Mike", gnomes=2)
-t4 = Transaction("30/01/2017", "15:10", "Audrey", gnomes=2, balls=3)
-t5 = Transaction("30/01/2017", "18:00", "John", balls=1)
-transactions = [] #'list' structure
-transactions.append(t1)
-transactions.append(t2)
-transactions.append(t3)
-transactions.append(t4)
-transactions.append(t5)
-print "Last transaction t5 was: ", transactions[4] #starts from 0
-
-prices = dict() #'dictionary' structure
-prices["tree"] = 30
-prices["gnome"] = 7.5
-prices["chocolate"] = 12
-prices["ball"] = 1.75
 
 def find_total_sales(transactions, prices):
     """ Returns the total sales from the transactions provided
@@ -97,5 +80,3 @@ def find_client_max_spent(transactions, prices):
 	keys = list(money_spent.keys())
 	client_max_spent = keys[values.index(max(values))]
 	return client_max_spent
-	
-print "Client who spent the most money: ", find_client_max_spent(transactions, prices)
