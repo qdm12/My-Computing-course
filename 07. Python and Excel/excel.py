@@ -1,4 +1,4 @@
-from calculations import Transaction, find_total_sales, find_participation, find_client_max_spent
+from calculations import Transaction, find_total_sales
 # The line above uses what we have worked on previously
 
 def read_transactions(worksheet):   

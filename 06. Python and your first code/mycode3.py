@@ -93,8 +93,8 @@ def find_client_max_spent(transactions, prices):
 			money_spent[t.client] = 0 #initializes to 0 for a client not encountered before
 		money_spent[t.client] += t.trees * prices["tree"] + t.gnomes * prices["gnome"] + \
 								 t.chocolates * prices["chocolate"] + t.balls * prices["ball"]
-	values = list(money_spent.values())
-	keys = list(money_spent.keys())
+	values = money_spent.values()
+	keys = money_spent.keys()
 	client_max_spent = keys[values.index(max(values))]
 	return client_max_spent
 	

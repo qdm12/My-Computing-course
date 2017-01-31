@@ -86,7 +86,7 @@ def find_participation(product_name, transactions, prices):
     participation = 100 * (float(total_sales_product) / total_sales) # float() just to make sure division is floating :)
     return participation
     
-print "Tree % participation in total sales: ", find_participation("tree", transactions, prices)
-print "Gnome % participation in total sales: ", find_participation("gnome", transactions, prices)
-print "Chocolate % participation in total sales: ", find_participation("chocolate", transactions, prices)
-print "Ball % participation in total sales: ", find_participation("ball", transactions, prices)
+print "Tree % participation in total sales: ", find_participation("tree", transactions, prices), "%"
+print "Gnome % participation in total sales: ", find_participation("gnome", transactions, prices), "%"
+print "Chocolate % participation in total sales: ", find_participation("chocolate", transactions, prices), "%"
+print "Ball % participation in total sales: ", find_participation("ball", transactions, prices), "%"

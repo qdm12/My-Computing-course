@@ -106,6 +106,7 @@ def find_participation(product_name, transactions, prices):
 	# You may have troubles here but it's good you'll learn that way !
 	return participation
 ```
+- Then just test it out with `print find_participation("tree", transactions, prices)` for example
 - If you can't make it, you can have a look at the file `mycode2.py` online.
 - And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
@@ -135,8 +136,8 @@ def find_client_max_spent(transactions, prices):
 	```
 	- Or you can Google, read 3 or 4 lines and find the fastest way to do it in 3 simple lines
 	```python
-	values = list(money_spent.values())
-	keys = list(money_spent.keys())
+	values = money_spent.values()
+	keys = money_spent.keys()
 	client_max_spent = keys[values.index(max(values))]
 	```
 - If you can't make it, you can have a look at the file `mycode3.py` online.

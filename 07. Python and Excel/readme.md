@@ -45,8 +45,8 @@ Process an excel file with Python, fetch some real web data and write computatio
 - Rename *mycode.py* to *calculations.py*
 - Create a new Python file *excel.py*, open it in *Liclipse* and add the following content and **SAVE**:
 ```python
-from calculations import Transaction, find_total_sales, find_participation, find_client_max_spent
-# The line above uses what we have worked on previously
+from calculations import Transaction, find_total_sales
+# The line above uses the find_total_sales function we have wrote previously
 
 def read_transactions(worksheet):   
     legend = worksheet['1']
@@ -106,7 +106,75 @@ if __name__ == "__main__":
 
 ## Tasks
 ### 1. Overall sales of all transactions in EUR
+- Add the two following functions in **excel.py** and fill up *read_prices()*:
+```python
+def read_prices():
+    prices = dict()
+    # Open workbook costs_and_prices.xlsx and read prices cells from it
+    # Get the name and the price of each item
+    # Then store the name and value of the item with prices[name] = value
+    return prices
+    
+def write_total_sales_EUR(worksheet, total_sales_EUR):
+    N = len(worksheet['A']) #Number of transactions + legend
+    worksheet.cell(row = 1, col = N+1, value = total_sales_EUR)
+    # The following line formats the cell as the EUR currency number in Excel
+    worksheet.cell(row = 1, col = N+1).number_format = '"EUR "#,##0.00'
+```
+- Then replace the `__name__ == "__main__":` block with:
+```python
+if __name__ == "__main__":
+    workbook = load_workbook("transactions.xlsx")
+    worksheet = workbook['Transactions']
+    transactions = read_transactions(worksheet)
+    prices = read_prices()
+    #Now we use find_total_sales that we wrote before
+    total_sales_EUR = find_total_sales(transactions, prices)
+    write_total_sales_EUR(worksheet, total_sales_EUR)
+    workbook.save("transactions.xlsx") #overwrites the previous version
+```
 
+### 2. Sorted list of the customers spending the most
+- Just comment out the three last lines of the main code of **excel.py**:
+```python
+if __name__ == "__main__":
+    workbook = load_workbook("transactions.xlsx")
+    worksheet = workbook['Transactions']
+    transactions = read_transactions(worksheet)
+    prices = read_prices()
+    """
+    #Now we use find_total_sales that we wrote before
+    total_sales_EUR = find_total_sales(transactions, prices)
+    write_total_sales_EUR(worksheet, total_sales_EUR)
+    workbook.save("transactions.xlsx") #overwrites the previous version
+    """
+```
+- Add the following function in **calculations.py** (very similar to *find_client_max_spent*):
+```python
+def sort_clients_by_spending(transactions, prices):
+	money_spent = dict() #Dictionary so you can have 3 clients or 300 it will still work
+	for t in transactions:
+		if t.client not in money_spent:
+			money_spent[t.client] = 0 #initializes to 0 for a client not encountered before
+		money_spent[t.client] += t.trees * prices["tree"] + t.gnomes * prices["gnome"] + \
+								 t.chocolates * prices["chocolate"] + t.balls * prices["ball"]
+	# You can't sort a dictionary unfortunately because its unordered
+    # But you can sort a list which has indices and is ordered
+    # Anyway, just google it it should only take one line to sort money_spent !
+    # Here http://stackoverflow.com/questions/613183/sort-a-python-dictionary-by-value
+    return sorted_money_spent # That's a list of 'tuples' like [('mike',256), ('John', 23), ...]
+```
+- Find out how to [sort a dictionary by value in Python](https://www.google.com/search?q=sort+a+dictionary+by+value+in+Python) and fill in that function
+- In **excel.py**, add `, sort_clients_by_spending` on the `from calculations import` line
+- In **excel.py**, add the following at the end of the main code:
+```python
+    sorted_money_spent = sort_clients_by_spending(transactions, prices)
+    # We are only interested in the clients, not the amount they spent so:
+    print "Clients ranking: ",
+    for i in range(len(sorted_money_spent)):
+        print sorted_money_spent[i][0] + ", ",
+    print
+```
 
 ***
 
