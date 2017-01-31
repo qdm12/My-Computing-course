@@ -8,6 +8,13 @@
 [![Atom.io][atom_image]][atom_link]
 
 
+## Always Google stuff, then don't be shy to ask
+- Google things, even very simple syntax problems
+- Someone went through the headaches already
+- www.stackoverflow.com is your *friend* for that
+- Don't be stubborn and ask people around, it's fine we're all ignorants
+- Always use other's people work, like packages to simplify your life
+
 ## Always test your code ASAP
 - Always **test** your code by running it :running:
   - Even with some fake data you make up :abcd:
