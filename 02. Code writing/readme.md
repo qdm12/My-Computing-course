@@ -13,7 +13,7 @@
 - Someone went through the headaches already
 - www.stackoverflow.com is your *friend* for that
 - Don't be stubborn and ask people around, it's fine we're all ignorants
-- Always use other's people work, like packages to simplify your life
+- Always use other people's work, like packages to simplify your life
 
 ## Always test your code ASAP
 - Always **test** your code by running it :running:
@@ -28,7 +28,7 @@
   - Choose names wisely (for *variables*, *functions*, etc.)
   - Comment your code
   - Check the input which can be trash :hankey:
-- Think as your code as re-usable :recycle:
+- Think of your code as re-usable :recycle:
 - Good example :wink: :
 ```python
 def find_average(numbers_list):
@@ -52,8 +52,8 @@ def find_average(numbers_list):
 def getavg(numbers):
   s = 0
   for x in numbers:
-      sum = sum + x
-  return float(sum) / numbers.length
+      s = s + x
+  return float(s) / numbers.length
 ```
 - Best super complete example :relieved: :
 ```python

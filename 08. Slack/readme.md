@@ -51,4 +51,4 @@ Finally it also makes machine to human communication smooth and sexy.
 6. Click on **Authenticate your Github account**
 7. Finally, choose the **first-project** repository in the Repositories section and click on **Save Integration**
 
- 
+
