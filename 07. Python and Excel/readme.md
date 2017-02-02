@@ -155,19 +155,52 @@ if __name__ == "__main__":
 ## PART 3 OF 3: Provide a sorted list of the best selling week days (i.e Monday) in a descending order 
 - This is similar to part 2 except that we are dealing with day names and not client names.
 - First things first: find the name of the day from the date
-	- Let's add the function `find_day_from_date(year, month, day):` in **calculations.py**
+	- Let's add the function `date_to_day(year, month, day)` in **calculations.py**
 	- Just [Google it](https://www.google.com/webhp?#q=find+name+of+day+from+date+python), click on the first link!
 	- Now to me the fifth answer seems great, understandable and short but it's up to you ! **TIP:** Test it in your terminal with `python`
 	- The function would then be
 	```python
 	from datetime import date #add this to the top of calculations.py
 	
-	find_day_from_date(year, month, day):
+	date_to_day(year, month, day):
 		start_of_year = date(year, month, day)
 		start_of_year_day = start_of_year.strftime("%A")
 		return start_of_year_day
 	```
-- TODO
+- Just to simplify our life now and in the future add that short function:
+```python
+def get_transaction_spending(transaction, prices):
+    spending = transaction.trees * prices["tree"] + \
+               transaction.gnomes * prices["gnome"] + \
+               transaction.chocolates * prices["chocolate"] + \
+               transaction.balls * prices["ball"]
+    return spending    
+```
+- Now add the following function skeleton in **calculations.py** and finish it:
+```python
+def find_sorted_best_selling_week_days(transactions, prices):
+    weekdays = dict()
+    weekdays["Monday"] = 0
+    # ... until "Sunday" initiate all them to 0 (EUR)
+    for transaction in transactions:
+        day_name = date_to_day(transaction.date)
+        weekdays[day_name] += get_transaction_spending(transaction)
+    # You now have the dictionary with all the sales on each week days for all transactions
+    # There are also other ways to do this but it's up to you
+    sorted_best_selling_week_days = sorted(weekdays.items(), key=itemgetter(1), reverse=True)
+    return sorted_best_selling_week_days #same thing as before, that's a list of tuples    
+```
+- Finally in the main code, test the function with
+```python
+    # ...
+    best_days = find_sorted_best_selling_week_days(transactions, prices)
+    position = 1
+    # BTW you can also just try print best_days to understand its structure etc
+    for day in best_days:
+        print "Position "+str(position)+": "+day[0]+" with a total spending of "+str(day[1])+" EUR"
+        position += 1        
+```
+- **BE SURE** that all these parts work otherwise the next lessons will fail at some point
 
 ***
 

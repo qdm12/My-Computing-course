@@ -11,20 +11,21 @@ people new to computing.
 6. Python and your first code :page_with_curl:
 7. Python and Excel :green_book:
 8. Slack :pager:
-9. Python and Pushbullet :pager:
-10. Python and web parsing :globe_with_meridians:
-11. Unit tests :construction:
-12. Travis CI and coveralls
-13. Python and database
-14. User interface
-15. Behave
-16. Pydoc documentation :book:
-17. Deploy to the cloud :cloud:
-18. Continuous Pipeline to the cloud
-19. Parallel processing and GPUs
-20. Python and machine learning :bar_chart:
-21. Docker :whale:
-21. Security :closed_lock_with_key:
+9. Python and Yahoo Finance and OOP
+10. Python and Pushbullet :pager:
+11. Python and web parsing :globe_with_meridians:
+12. Unit tests :construction:
+13. Travis CI and coveralls
+14. Python and database
+15. User interface
+16. Behave
+17. Pydoc documentation :book:
+18. Deploy to the cloud :cloud:
+19. Continuous Pipeline to the cloud
+20. Parallel processing and GPUs
+21. Python and machine learning :bar_chart:
+22. Docker :whale:
+23. Security :closed_lock_with_key:
 
 ## Resources
 

@@ -160,6 +160,13 @@ To add what we've done in the previous [Github lesson 4][lesson_04]:
     
 Now that you are ready to write some Python well... [lesson 6][lesson_06]
 
+## What did you learn?
+- Run Python code with a Vagrant VM
+- Setup Python and Liclipse
+- Create modules and test them in Liclipse
+- Use of `.gitignore` to ignore files in Git
+- Syntax and runtime errors in Python and Liclipse
+
 ## To add to your resume
 - Python 2.7
 - Liclipse

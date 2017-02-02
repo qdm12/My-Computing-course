@@ -101,6 +101,13 @@ def find_average(numbers_list):
 
 Before going any further, time to [Vagrant up][lesson_03]
 
+## What did you learn?
+- Agree you don't know and Google stuff
+- Use other people's work and don't be stubborn
+- Test small bits of your code
+- Code writing: comments, wise naming, re-usability
+- Run your code with `python mycode.py`
+
 ## To add to your resume
 - Atom.io
 

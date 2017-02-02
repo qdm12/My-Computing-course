@@ -97,11 +97,17 @@ This is my first project to understand the basics of *Git* and *Github*
 - Now that you master a few commands and the concept of Git...
 - Just install the [**GitKraken**][gitkraken_link] and set it up somehow for your repository
 - It's basically the same as before except it looks great and you understand what the hell is going on
-
-Time to use your brain and write [Python code][lesson_05] :snake:
   
 ## More advanced: Probably see that later on :dizzy_face:
 - Branches ! But just use GitKraken to check that out, it's way easier to understand !
+
+Time to use your brain and write [Python code][lesson_05] :snake:
+
+## What did you learn?
+- Basic use of Git and Github
+- Markdown for `readme.md` in Github
+- Quick preview of collaborative coding in Github
+- GitKraken.. that you will use soon
 
 ## To add to your resume
 - Git

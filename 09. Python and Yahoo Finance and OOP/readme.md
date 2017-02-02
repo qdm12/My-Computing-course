@@ -38,6 +38,5 @@
 - Some bases for **OOP** which is very useful soon
 	
 ## To add to your resume
-- Yahoo Finance
-- Maybe YQL eventually
+- Yahoo Finance (Python)
 - OOP or *Object oriented programming*

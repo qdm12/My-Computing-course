@@ -48,6 +48,10 @@
     
 Now, time to dive into [good coding habits][lesson_02] :computer:
 
+## What did you learn?
+- What's a program code basically
+- How the program makes use of the computer
+
 [01s]: /internals/gifs/01.gif
 [pyramid]: https://www.dropbox.com/s/mjvsv4njvf6e28s/pyramids.gif?dl=1
 [lesson_02]: /02.%20Code%20writing
