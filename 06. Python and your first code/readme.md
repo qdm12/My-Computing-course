@@ -110,38 +110,38 @@ def find_participation(product_name, transactions, prices):
 - If you can't make it, you can have a look at the file `mycode2.py` online.
 - And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
-### PART 3 of 3: Find who is the client who spent the most money
+### PART 3 of 3: Find the sorted list of the clients spending with their name and spendings in a descending order
 - Accumulate the total amount of money spent for each client (use a `dict()`)
-- Find the maximum of money spent amongst those accumulations to find the target client
-- Follow this format
+- Then sort your dictionary in a descending order according the accumulated money spent
+- Follow this format and finish up that function
 ```python
-def find_client_max_spent(transactions, prices):
+def sort_clients_by_spending(transactions, prices):
 	money_spent = dict() #Dictionary so you can have 3 clients or 300 it will still work
 	for t in transactions:
-		# You can (efficiently) check if a client name is not present in the money_spent dict with: if "John" not in money_spent:
-		# do stuff here
-	# find maximum in dictionary and the associated client and store that in the variable client_max_spent
-	return client_max_spent
+		if t.client not in money_spent:
+			money_spent[t.client] = 0 #initializes to 0 for a client not encountered before
+		money_spent[t.client] += t.trees * prices["tree"] + t.gnomes * prices["gnome"] + \
+								 t.chocolates * prices["chocolate"] + t.balls * prices["ball"]
+	# You can't sort a dictionary unfortunately because its unordered
+    # But you can sort a list which has indices and is ordered
+    # Anyway, just google it it should only take one line to sort money_spent !
+    # Here http://stackoverflow.com/questions/613183/sort-a-python-dictionary-by-value
+    return sorted_money_spent # That's a list of 'tuples' like [('mike',256), ('John', 23), ...]
 ```
-- Small **tip** to find the *key* associated with the maximum value in the dictionary money_spent
-	- You can go hardcore and write that function
-	```python
-	def find_max(money_spent):
-		max_value = -1
-		for client in money_spent:
-			if money_spent[client] > max_value:
-				max_value = money_spent[client]
-				max_client = client
-		return max_client
-	```
-	- Or you can Google, read 3 or 4 lines and find the fastest way to do it in 3 simple lines
-	```python
-	values = money_spent.values()
-	keys = money_spent.keys()
-	client_max_spent = keys[values.index(max(values))]
-	```
 - If you can't make it, you can have a look at the file `mycode3.py` online.
+- If you think you're done, be sure it is in **DESCENDING** order (have a quick look [here](https://docs.python.org/2/howto/sorting.html#ascending-and-descending))
 - And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
+
+***
+
+## What did you learn?
+- **if**, **elif**, **else** conditions and **for** loops
+- Python functions
+- Python built-in types: *list*, *dict*, *tuple*
+- First programming headaches
+- Use of **GitKraken** or **Git**
+- Use of **Liclipse**
+- **Sort** data with `sorted`
 
 WELL DONE ! You have wrote your first pieces of headaches in a Python program !
 

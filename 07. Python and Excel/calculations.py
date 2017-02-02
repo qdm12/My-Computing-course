@@ -1,4 +1,4 @@
-from openpyxl import load_workbook
+from operator import itemgetter
 
 class Transaction(object):
     def __init__(self, date, time, client, trees=0, gnomes=0, chocolates=0, balls=0):
@@ -68,15 +68,22 @@ def find_participation(product_name, transactions, prices):
             raise Exception("This product does not exist !") #stops the program entirely
     participation = 100 * (float(total_sales_product) / total_sales) # float() just to make sure division is floating :)
     return participation
-    
-def find_client_max_spent(transactions, prices):
+
+def sort_clients_by_spending(transactions, prices):
+    """ Returns a list of tuples where the first element is the client name and the second is its total spending
+
+        Args:
+            transactions (list): List of Transaction objects
+            prices (dict): Dictionary of prices
+            
+        Returns:
+            sorted_money_spent (list): List of tuples, where the first element is a string and second is a float
+    """
 	money_spent = dict() #Dictionary so you can have 3 clients or 300 it will still work
 	for t in transactions:
 		if t.client not in money_spent:
 			money_spent[t.client] = 0 #initializes to 0 for a client not encountered before
 		money_spent[t.client] += t.trees * prices["tree"] + t.gnomes * prices["gnome"] + \
 								 t.chocolates * prices["chocolate"] + t.balls * prices["ball"]
-	values = list(money_spent.values())
-	keys = list(money_spent.keys())
-	client_max_spent = keys[values.index(max(values))]
-	return client_max_spent
+	sorted_money_spent = sorted(money_spent.items(), key=itemgetter(1), reverse=True) #we add reverse=True to make it descending !
+	return sorted_money_spent # That's a list of 'tuples' like [('mike',256), ('John', 23), ...]
