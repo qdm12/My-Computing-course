@@ -11,7 +11,7 @@ people new to computing.
 6. Python and your first code :page_with_curl:
 7. Python and Excel :green_book:
 8. Slack :pager:
-9. Python and Yahoo Finance and OOP
+9. Python, Yahoo Finance and OOP
 10. Python and Pushbullet :pager:
 11. Python and web parsing :globe_with_meridians:
 12. Unit tests :construction:

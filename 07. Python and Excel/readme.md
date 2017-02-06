@@ -216,5 +216,8 @@ def find_sorted_best_selling_week_days(transactions, prices):
 - openpyxl
 - Liclipse
   
+Time to take a Python break and [use Slack]
+
 [excel_image]: /internals/icons/excel.ico
 [google_xlsx]: https://www.google.com/search?q=python%20xlsx
+[lesson_08]: /08.%20Slack

@@ -1,5 +1,7 @@
 # 8. Slack
 
+[![Slack][slack_image]][slack_link]
+
 Slack makes team communication easier especially by making communication between
 apps very smooth and integrated. 
 
@@ -9,7 +11,7 @@ Finally it also makes machine to human communication smooth and sexy.
 
 ## Integrations
 - Envoy (for reception)
-- Github
+- **Github**
 - Foursquare *try:* /foursquare **business lunch** in **new york**
 - Giffy
 - Dropbox
@@ -32,7 +34,7 @@ Finally it also makes machine to human communication smooth and sexy.
 4. We will use the **#general** channel for general discussion and messaging
 
 ## Communicate with other humans
-- Pretty much similar to markdown
+- Pretty much similar to markdown (*readme.md* for Github)
 - Use SHIFT+ENTER to create a new line
 - Use \*text\* to write text in **bold**
 - Use \_text\_ to write text in *italic*
@@ -51,4 +53,10 @@ Finally it also makes machine to human communication smooth and sexy.
 6. Click on **Authenticate your Github account**
 7. Finally, choose the **first-project** repository in the Repositories section and click on **Save Integration**
 
+That's it for now, but you'll see more uses of Slack later on.
 
+Now let's go back in Python and [dig into Object oriented programming and Yahoo Finance with Python][lesson_09]
+
+[slack_image]: /internals/icons/slack.png
+[slack_link]: https://www.slack.com
+[lesson_09]: /09.%20Python,%20currencies%20and%20OOP
