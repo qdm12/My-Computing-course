@@ -16,10 +16,10 @@
 ## Create your *repository* on Github
 1. Go to [**github.com/new**](https://www.github.com/new)
 2. Enter the repository name "first-project" and click **Create repository**
-3. If your username is *denisee*, copy your repository Git link https://github.com/denisee/first-project.git
+3. If your username is *ddenise*, copy your repository Git link https://github.com/ddenise/first-project.git
 
 ## **Clone** your repository
-4. In your terminal, enter `git clone https://github.com/denisee/first-project.git` :arrow_double_down:
+4. In your terminal, enter `git clone https://github.com/ddenise/first-project.git` :arrow_double_down:
 
 ## Modify your *local* repository
 5. Enter `cd first-project` :open_file_folder:
@@ -48,7 +48,7 @@ This is my first project to understand the basics of *Git* and *Github*
 8. In your terminal, enter `git add readme.md`
 9. Enter `git commit -m "Added the readme file"`
 10. Enter `git push` :arrow_up: (*this uploads your changes to Github*)
-11. Go to [github.com/**denisee**/first-project](https://www.github.com/denisee/first-project). 
+11. Go to [github.com/**ddenise**/first-project](https://www.github.com/ddenise/first-project). 
     There is now one file named *readme.md* and, as you can see, 
     it is displayed nicely if you scroll down :open_mouth:
 
