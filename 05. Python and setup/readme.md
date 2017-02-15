@@ -84,6 +84,8 @@ it is better to see what syntax errors :x: or what possibilities you have while 
 Unfortunately, Vagrant/Pydev/Python/BunchOfOtherThings are stupid on something called *remote debugging*
 except if you spend $200 on a program called *Pycharm* but we're **cheap** so we will go a harder way...
 
+So shut down **Vagrant** with `vagrant halt` as we will not use it to write code really.
+
 1. Install [**Python 2.7**][python_link] on your computer.
 2. Install [**Liclipse**][liclipse_link] on your computer.
 3. Launch Liclipse, choose **Liclipse dark theme** :black_large_square:,
