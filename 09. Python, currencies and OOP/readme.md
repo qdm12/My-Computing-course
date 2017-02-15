@@ -69,31 +69,31 @@ def get_historical_exchange_rate(currency_pair, date):
 #### Plug *fixer.io* into *Python*
 There is a built-in Python package called urllib which is great for web stuff
 1. At the top of *online.py*, add:
-  ```python
-  from urllib import urlopen
-  ```
+```python
+from urllib import urlopen
+```
 2. Add the main thingy at the bottom of *online.py*:
-   ```python
-   if __name__ == "__main__":
-       url = 'https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05'
-       response = urlopen(url)
-       print response.read()
-   ```
+```python
+if __name__ == "__main__":
+   url = 'https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05'
+   response = urlopen(url)
+   print response.read()
+```
 3. Now run **online.py** and TADAA you got the same ugly JSON response...
 4. You may remove that print line you just added if you feel like it
 
 #### Parse this ugly JSON
 We are only interested into the last number (exchange rate) of the response.
 1. To parse json, well, you just add that to the top of *online.py*:
-  ```python
-  from json import load
-  ```
+```python
+from json import load
+```
 2. Then append the following to your *main* code:
-   ```python
-       data = load(response)
-       rate_string = data["rates"]["EUR"]
-       print rate_string  
-   ```
+```python
+   data = load(response)
+   rate_string = data["rates"]["EUR"]
+   print rate_string  
+```
 3. Now run **online.py** and TADAA the last printed line is the rate (a string though, so convert it later with **float()**)
 
 #### Plug this into the skeleton
@@ -101,37 +101,37 @@ We are only interested into the last number (exchange rate) of the response.
 - Think about what are the parameters: **date**, **currency1**, **currency2**
 - What should be the output? A **floating** number representing the rate.
 - You should be able to do that function easily. Just in case, here is the solution:
-  ```python
-  def get_historical_exchange_rate(currency_pair, date):
-      """ Fetches the exchange rate of a currency pair at a certain date.
-      
-          The rates are fetched from fixer.io (European central bank), which are 
-          updated daily at 4PM EST.
+```python
+def get_historical_exchange_rate(currency_pair, date):
+  """ Fetches the exchange rate of a currency pair at a certain date.
   
-          Args:
-              currency_pair (string): Currency pair in the form USDEUR
-              date (string): European date format dd/mm/yyyy
-  
-          Returns:
-              rate (float): Exchange rate of the currency pair
-      """
-      currency1 = currency_pair[0:3]
-      currency2 = currency_pair[3:]
-      if currency1 == currency2: #if we want the rate USDUSD or EUREUR etc.
-          return 1.00
-      date = date.split('/')
-      date = date[2] + "-" + date[1] + "-" + date[0] #format for fixer.io
-      response = urlopen("https://api.fixer.io/latest?base="+currency1+"&symbols="+currency2+"&date="+date)
-      data = load(response)
-      rate_string = data["rates"][currency2]
-      rate = float(rate_string) #converts to floating point number
-      return rate
-  ```
+      The rates are fetched from fixer.io (European central bank), which are 
+      updated daily at 4PM EST.
+
+      Args:
+          currency_pair (string): Currency pair in the form USDEUR
+          date (string): European date format dd/mm/yyyy
+
+      Returns:
+          rate (float): Exchange rate of the currency pair
+  """
+  currency1 = currency_pair[0:3]
+  currency2 = currency_pair[3:]
+  if currency1 == currency2: #if we want the rate USDUSD or EUREUR etc.
+      return 1.00
+  date = date.split('/')
+  date = date[2] + "-" + date[1] + "-" + date[0] #format for fixer.io
+  response = urlopen("https://api.fixer.io/latest?base="+currency1+"&symbols="+currency2+"&date="+date)
+  data = load(response)
+  rate_string = data["rates"][currency2]
+  rate = float(rate_string) #converts to floating point number
+  return rate
+```
 - Finally, replace your code in the main block with:
-  ```python
-  if __name__ == "__main__":
-      print get_historical_exchange_rate("GBPEUR", "05/01/2017")
-  ```
+```python
+if __name__ == "__main__":
+  print get_historical_exchange_rate("GBPEUR", "05/01/2017")
+```
 - You can run *online.py* to test out everything works as planned.
   
 ### TO BE CONTINUED ===
