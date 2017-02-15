@@ -67,34 +67,23 @@ def get_historical_exchange_rate(currency_pair, date):
 - And TADAA you get an ugly "*JSON*" response where the rate is the last number on the line
 
 #### Plug *fixer.io* into *Python*
-There is a built-in Python package called urllib which is great for web stuff
+There is a built-in Python package called **requests** which is great for web stuff
 1. At the top of *online.py*, add:
 ```python
-from urllib import urlopen
+import requests
 ```
 2. Add the main thingy at the bottom of *online.py*:
 ```python
 if __name__ == "__main__":
     url = 'https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05'
-    response = urlopen(url)
-    print response.read()
-```
-3. Now run **online.py** and TADAA you got the same ugly JSON response...
-4. You may remove that print line you just added if you feel like it
-
-#### Parse this ugly JSON
-We are only interested into the last number (exchange rate) of the response.
-1. To parse json, well, you just add that to the top of *online.py*:
-```python
-from json import load
-```
-2. Then append the following to your *main* code:
-```python
-    data = load(response)
+    response = requests.get(url)
+    data = response.json() #This converts the ugly JSON into dictionaries
+    print data
     rate_string = data["rates"]["EUR"]
-    print rate_string  
+    print rate_string
 ```
-3. Now run **online.py** and TADAA the last printed line is the rate (a string though, so convert it later with **float()**)
+3. ow run **online.py** and TADAA the last printed line is the rate (a string though, so convert it later with `float()`)
+4. You may remove the two print lines you just added if you feel like it
 
 #### Plug this into the skeleton
 - Let's make it work universally for any currencies and any date !
@@ -121,8 +110,8 @@ def get_historical_exchange_rate(currency_pair, date):
         return 1.00
     date = date.split('/')
     date = date[2] + "-" + date[1] + "-" + date[0] #format for fixer.io
-    response = urlopen("https://api.fixer.io/latest?base="+currency1+"&symbols="+currency2+"&date="+date)
-    data = load(response)
+    response = requests.get("https://api.fixer.io/latest?base="+currency1+"&symbols="+currency2+"&date="+date)
+    data = response.json() #This converts the ugly JSON into dictionaries
     rate_string = data["rates"][currency2]
     rate = float(rate_string) #converts to floating point number
     return rate
