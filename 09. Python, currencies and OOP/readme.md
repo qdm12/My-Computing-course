@@ -64,7 +64,7 @@ def get_historical_exchange_rate(currency_pair, date):
     - The rates are updated daily at around 4PM (*which suits our problem here*)
     - It is way easier to use than Yahoo Finance oddly...
 - In your browser, try entering this URL: [https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05][fixerio_query_link]
-- And TADAAA you an ugly "*JSON*" response where the rate is the last number on the line
+- And TADAA you get an ugly "*JSON*" response where the rate is the last number on the line
 
 #### Plug *fixer.io* into *Python*
 There is a built-in Python package called urllib which is great for web stuff
@@ -73,12 +73,12 @@ There is a built-in Python package called urllib which is great for web stuff
   from urllib import urlopen
   ```
 2. Add the main thingy at the bottom of *online.py*:
-  ```python
-  if __name__ == "__main__":
-      url = 'https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05'
-      response = urlopen(url)
-      print response.read()
-  ```
+   ```python
+   if __name__ == "__main__":
+       url = 'https://api.fixer.io/latest?base=GBP&symbols=EUR&date=2017-01-05'
+       response = urlopen(url)
+       print response.read()
+   ```
 3. Now run **online.py** and TADAA you got the same ugly JSON response...
 4. You may remove that print line you just added if you feel like it
 
@@ -89,11 +89,11 @@ We are only interested into the last number (exchange rate) of the response.
   from json import load
   ```
 2. Then append the following to your *main* code:
-  ```
-      data = load(response)
-      rate_string = data["rates"]["EUR"]
-      print rate_string  
-  ```
+   ```python
+       data = load(response)
+       rate_string = data["rates"]["EUR"]
+       print rate_string  
+   ```
 3. Now run **online.py** and TADAA the last printed line is the rate (a string though, so convert it later with **float()**)
 
 #### Plug this into the skeleton
