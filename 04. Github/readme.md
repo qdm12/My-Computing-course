@@ -19,7 +19,9 @@
 3. If your username is *ddenise*, copy your repository Git link https://github.com/ddenise/first-project.git
 
 ## **Clone** your repository
-4. In your terminal, enter `git clone https://github.com/ddenise/first-project.git` :arrow_double_down:
+- In your terminal, enter `git clone https://github.com/ddenise/first-project.git` :arrow_double_down:
+- On Mac OSX, you will have to install Xcode which will automatically be prompted to you.
+
 
 ## Modify your *local* repository
 5. Enter `cd first-project` :open_file_folder:
