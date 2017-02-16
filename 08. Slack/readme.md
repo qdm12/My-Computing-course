@@ -12,9 +12,14 @@ Finally it also makes machine to human communication smooth and sexy.
 ## Integrations
 - Envoy (for reception)
 - **Github**
-- Foursquare *try:* /foursquare **business lunch** in **new york**
+- Foursquare
+    - Add the integration [here](https://foursquare.com/apps/slack)
+    - *try:* /foursquare **business lunch** in **new york**
 - Giffy
 - Dropbox
+- Appear.in
+    - Add the integration [here](https://mcgaw.slack.com/apps/A0F7YS1JP-appearin)
+    - *try:* /appear
 - Have a look at [all the integrations](https://slack.com/apps)
 - Marketing apps for Slack [here](https://slack.com/apps/category/At0EFRCDQU-marketing)
 
