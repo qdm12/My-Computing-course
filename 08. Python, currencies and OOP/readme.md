@@ -1,4 +1,4 @@
-# 9. Python, currencies and OOP
+# 8. Python, currencies and OOP
 
 ## Definitions
 - *OOP*: Object oriented programming, just means you use *classes* in your code (to make *"objects"*)

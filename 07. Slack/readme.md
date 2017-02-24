@@ -1,4 +1,4 @@
-# 8. Slack
+# 7. Slack
 
 [![Slack][slack_image]][slack_link]
 
@@ -19,7 +19,7 @@ Finally it also makes machine to human communication smooth and sexy.
 - Dropbox
 - Appear.in
     - Add the integration [here](https://mcgaw.slack.com/apps/A0F7YS1JP-appearin)
-    - *try:* /appear
+    - *try:* `/appear`
 - Have a look at [all the integrations](https://slack.com/apps)
 - Marketing apps for Slack [here](https://slack.com/apps/category/At0EFRCDQU-marketing)
 
@@ -64,4 +64,4 @@ Now let's go back in Python and [dig into Object oriented programming and Yahoo 
 
 [slack_image]: /internals/icons/slack.png
 [slack_link]: https://www.slack.com
-[lesson_09]: /09.%20Python,%20currencies%20and%20OOP
+[lesson_08]: /08.%20Python,%20currencies%20and%20OOP

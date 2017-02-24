@@ -1,4 +1,4 @@
-# 7. Python and Excel
+# 6. Python and Excel
 
 ![Excel][excel_image]
 
@@ -220,4 +220,4 @@ Time to take a Python break and [use Slack]
 
 [excel_image]: /internals/icons/excel.ico
 [google_xlsx]: https://www.google.com/search?q=python%20xlsx
-[lesson_08]: /08.%20Slack
+[lesson_07]: /07.%20Slack

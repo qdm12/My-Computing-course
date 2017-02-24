@@ -1,4 +1,4 @@
-# 6. Python and your first code
+# 4. Python and your first code
 
 ## Final aim of this lesson
 Write something that could be useful for some real business
@@ -86,13 +86,12 @@ def find_total_sales(transactions, prices):
     return total_sales
 ```
 - If you can't make it, you can have a look at the file `mycode1.py` online.
-- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
 ### PART 2 of 3: Find percentages of each product as its total sale participation
 - For example, if we sold 3 christmas trees @ $30 and have sold $150 overall, the Chritmas
   tree total sale participation is 100 * (3*$30)/$150 = 60%.
 - We want this information for the same Sunday as before
-- Write a function following this format:
+- Write (append) a function following this format:
 ```python
 def find_participation(product_name, transactions, prices):
     total_sales = find_total_sales(transactions, prices)
@@ -108,12 +107,11 @@ def find_participation(product_name, transactions, prices):
 ```
 - Then just test it out with `print find_participation("tree", transactions, prices)` for example
 - If you can't make it, you can have a look at the file `mycode2.py` online.
-- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
 ### PART 3 of 3: Find the sorted list of the clients spending with their name and spendings in a descending order
 - Accumulate the total amount of money spent for each client (use a `dict()`)
 - Then sort your dictionary in a descending order according the accumulated money spent
-- Follow this format and finish up that function
+- Follow this format and finish up that new function
 ```python
 def sort_clients_by_spending(transactions, prices):
 	money_spent = dict() #Dictionary so you can have 3 clients or 300 it will still work
@@ -130,7 +128,6 @@ def sort_clients_by_spending(transactions, prices):
 ```
 - If you can't make it, you can have a look at the file `mycode3.py` online.
 - If you think you're done, be sure it is in **DESCENDING** order (have a quick look [here](https://docs.python.org/2/howto/sorting.html#ascending-and-descending))
-- And... **GIT THIS UP !!!** (with *GitKraken* or `git add mycode.py && git commit -m "your message" && git push`)
 
 ***
 
@@ -145,6 +142,6 @@ def sort_clients_by_spending(transactions, prices):
 
 WELL DONE ! You have wrote your first pieces of headaches in a Python program !
 
-Time to Python with [**Excel** and more real-life-like data][lesson_07]
+Time to take a break from Python and learn about [**Github**][lesson_05]
 
-[lesson_07]: /07.%20Python%20and%20Excel
+[lesson_05]: /05.%20Github
