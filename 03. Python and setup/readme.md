@@ -13,7 +13,7 @@ Although you can write code in any text editor *"blindly"* :see_no_evil:,
 it is better to see what syntax errors :x: or what possibilities you have while writing code.
 
 1. Install [**Python 2.7**][python_link]
-    - You should **already** have Python on Mac OS*, just check it by entering `python` in your terminal.
+    - You should **already** have Python on Mac OS and some Linux OS*, just check it by entering `python` in your terminal.
 2. Install [**Liclipse**][liclipse_link]
 3. Launch Liclipse
 4. Choose a workplace as it prompts you for it and tick :ballot_box_with_check:
