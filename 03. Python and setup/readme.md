@@ -38,7 +38,7 @@ it is better to see what syntax errors :x: or what possibilities you have while 
     - Hover over **Run as**
     - Click on **1 Python Run**
 5. After that, run it by pressing on the *Play* button :arrow_forward: at the top or by pressing your **F9** key.
-    - *Note that you can still run that code with `python mycode.py` in your terminal or in Vagrant as before.*
+    - *Note that you can still run that code with `python mycode.py` in your terminal.*
 6. You should see *Hello* in the Liclipse bottom pane console.
 
 ### Liclipse and errors
@@ -90,7 +90,7 @@ it is better to see what syntax errors :x: or what possibilities you have while 
    age_day = today_day - birth_day
    
    age_float = age_year + float(age_month)/12 + float(age_day)/365
-   #float() converts to a floating point number. It is necesary to floating point divisions !
+   #float() converts to a floating point number. It is necessary to floating point divisions !
    print "You are "+str(age_float)+" years old"
    #str() converts to 'text' (string)
    ```
