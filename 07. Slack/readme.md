@@ -60,7 +60,7 @@ Finally it also makes machine to human communication smooth and sexy.
 
 That's it for now, but you'll see more uses of Slack later on.
 
-Now let's go back in Python and [dig into Object oriented programming and Yahoo Finance with Python][lesson_09]
+Now let's go back in Python and [dig into Object oriented programming and web parsing of currency rates with Python][lesson_08]
 
 [slack_image]: /internals/icons/slack.png
 [slack_link]: https://www.slack.com

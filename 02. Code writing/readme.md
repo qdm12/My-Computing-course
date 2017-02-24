@@ -99,7 +99,7 @@ def find_average(numbers_list):
 - You mostly need to know about **if**, **elif** (*else if*) and **else**.
 - And **for loops**, but I'll teach you that
 
-Before going any further, time to [Vagrant up][lesson_03]
+Before going any further, time to [setup Python][lesson_03]
 
 ## What did you learn?
 - Agree you don't know and Google stuff
@@ -115,4 +115,4 @@ Before going any further, time to [Vagrant up][lesson_03]
 [atom_image]: /internals/icons/atom.io.png "Atom.io"
 [code_writing]: /internals/gifs/code_writing.gif
 [npp_link]: https://www.notepad-plus-plus.org/download/v7.2.2.html
-[lesson_03]: /03.%20Vagrant
+[lesson_03]: /03.%20Python%20and%20setup

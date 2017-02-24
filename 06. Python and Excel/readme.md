@@ -81,18 +81,7 @@ if __name__ == "__main__":
     ```python
     from openpyxl import load_workbook
     ```
-    - You can now use the *load_workbook* function to read an Excel file in Python !!
-3. Let's not forget about *Vagrant*... 
-    - Look at the *Vagrantfile* with your code editor (**TIP:** Enter `cat Vagrantfile`) and you should see that:
-    ```shell
-    cd /vagrant
-    sudo pip install -r requirements.txt  
-    ```
-    - First line changes your directory (`cd`) to the shared directory `/vagrant` :file_folder:
-    - Second line tells **pip** to install what is asked for in the *requirements.txt* file
-    - Open *requirements.txt*... **NOTHING ?** *Yes.* Because we did not need any packages yet.
-    - Just add **openpyxl** to the first line of *requirements.txt*
-    - Next time, use `vagrant up --provision` to install that package in Vagrant :wink:
+    - You can now use the *load_workbook* function to read an Excel file in Python
 
 ***
 
@@ -125,6 +114,7 @@ if __name__ == "__main__":
     write_total_sales_EUR(worksheet, total_sales_EUR)
     workbook.save("transactions.xlsx") #overwrites the previous version
 ```
+- Finally add, commit and push those changes to Github (actually do it)
 
 ### PART 2 OF 3: Sorted list of the customers spending the most
 - Just comment out the three last lines of the main code of **excel.py**:
@@ -151,6 +141,7 @@ if __name__ == "__main__":
         print element[0] + ", ",
     print
 ```
+- Finally add, commit and push those changes to Github (actually do it)
 
 ## PART 3 OF 3: Provide a sorted list of the best selling week days (i.e Monday) in a descending order 
 - This is similar to part 2 except that we are dealing with day names and not client names.
@@ -201,6 +192,9 @@ def find_sorted_best_selling_week_days(transactions, prices):
         position += 1        
 ```
 - **BE SURE** that all these parts work otherwise the next lessons will fail at some point
+- Finally add, commit and push those changes to Github (actually do it)
+
+Time to take a Python break and [use Slack][lesson_07]
 
 ***
 
@@ -215,8 +209,7 @@ def find_sorted_best_selling_week_days(transactions, prices):
 ## To add to your resume
 - openpyxl
 - Liclipse
-  
-Time to take a Python break and [use Slack]
+ 
 
 [excel_image]: /internals/icons/excel.ico
 [google_xlsx]: https://www.google.com/search?q=python%20xlsx
