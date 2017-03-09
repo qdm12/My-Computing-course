@@ -90,7 +90,7 @@ it is better to see what syntax errors :x: or what possibilities you have while 
    age_day = today_day - birth_day
    
    age_float = age_year + float(age_month)/12 + float(age_day)/365
-   #float() converts to a floating point number. It is necessary to floating point divisions !
+   #float() converts to a floating point number. It is necessary for floating point divisions !
    print "You are "+str(age_float)+" years old"
    #str() converts to 'text' (string)
    ```
